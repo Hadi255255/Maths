@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en" name="language" content="language of page"
+            property="https://nicemaths.com/html/multiple_english.html">
+        <meta
+            content="This site contains exercises and helps students to understand and memorize the multiplication tables."
+            name="description"><!-- <meta name="keywords" content=" multiplication, excercises"> -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width,initial-scale=1.0" name="viewport">
+        <!-- <meta content="text/html" http-equiv="Content-Type"> -->
+        <meta content="Shadi Rahhal" name="author">
+        <meta content="english" name="language">
+        <meta content="Multipication excercises in English" name="title">
+        <meta content="index,follow" name="robots">
+        <meta content="notranslate" name="googlebot">
+        <meta content="Saturday, March 10th, 2023, 6:00 am" name="revised">
+        <meta content="safe for kids" name="rating">
+        <meta content="Copyright 2023" name="copyright">
+        <meta http-equiv="default-style" content="1">
+        <!-- <meta http-equiv="refresh" content="3"> -->
+        <!-- <meta http-equiv="english"> -->
+        <!-- <meta content="no-cache" http-equiv="Cache-Control"> -->
+        <meta content="telephone=yes" name="format-detection">
+        <meta content="true" name="HandheldFriendly"><!-- Social Media Tags -->
+        <meta content="Multipication excercises in English" property="og: title">
+        <meta content="website" property="og: type">
+        <meta content="../image/icon4" property="og: image">
+        <meta content="https://nicemaths.com/" property="og: url">
+        <meta content="A distinctive way to memorize multiplication and division tables and placement tests"
+            property="og: description">
+        <meta content="arabic" property="og: locale">
+        <meta content="Nice Maths" property="og: site_name"><!-- ======================= -->
+        <title>Multipication tables in English</title>
+        <link href="../images/icon4.png" id="icon3" rel="icon" type="image/x-icon">
+        <link href="../css/multiple_english.css" id="main_css" rel="stylesheet">
+        <link href="#home_arabic_css" id="home_arabic_css" rel="stylesheet">
+        <link href="#home_english_css" id="home_english_css" rel="stylesheet">
+        <link href="#help_english_css" id="help_english_css" rel="stylesheet">
+        <link href="#model_css" id="model_css" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class="toolbar">
+            <a href="#home_english.html" id="home_arabic">
+                <div class="home_m"><img alt="home" class="img_home" src="../images/home.svg"></div>
+            </a>
+            <div class="select">
+                <img alt="language" class="img_lang" src="../images/lang.svg"> <a href="multiple_arabic.html">
+                    <div class="option arabic-lan">
+                        العربية
+                    </div>
+                </a>
+                <div class="option eng-lan">
+                    English
+                </div>
+            </div><a href="#multiple_arabic.html" id="multiple_arabic">
+                <div class="mul padding4 mul_2 mul_m mul_m_div" id="light_mul">
+                    Multiplication Tables
+                </div>
+            </a> <a href="#division_english.html" id="division_arabic">
+                <div class="padding4 div_m" id='light_div'>
+                    Division Tables
+                </div>
+            </a> <a href="#general_english.html" id="general_arabic">
+                <div class="padding4 gen_m">
+                    General Tests
+                </div>
+            </a> <a href="#help_english.html" id="help_arabic">
+                <div class="padding4 help_m">
+                    Help
+                </div>
+            </a>
+            <div class="tune" id="tune">
+                Music<br>
+                <span id="song_number"></span>
+            </div>
+            <div class="effects" id="effects">
+                <span class="effects_w">Sound Effects</span>
+            </div>
+        </div>
+        <div class="timer"></div>
+        <div class="speed_float">
+            <div class="move">
+                <div class="speed">
+                    «
+                </div>
+                <div class="speed_level">
+                    <form class="speed_form" id="form" name="form">
+                        <input checked id="first" name="speed_input" type="radio" value="first"> <label
+                            class="speed_label" for="first">Speed 1</label><br>
+                        <input id="second" name="speed_input" type="radio" value="scond"> <label class="speed_label"
+                            for="second">Speed 2</label><br>
+                        <input id="third" name="speed_input" type="radio" value="third"> <label class="speed_label"
+                            for="third">Speed 3</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="face green"><img alt="green" class="model" src="../images/svg_green.svg"></div>
+                <div class="face blue"><img alt="bwhitelue" class="model" src="../images/svg_blue.svg"></div>
+                <div class="face white"><img alt="white" class="model" src="../images/svg_light.svg"></div>
+                <div class="face black"><img alt="black" class="model" src="../images/svg_night.svg"></div>
+                <div class="face yellow">⭐</div>
+                <div class="face pink">❀</div>
+            </div>
+            <div style="clear:both ;"></div>
+            <div class="face red"></div>
+        </div>
+        <div class="color_container">
+            <div class="control_color">
+                <button class="close">×</button>
+                <h4>Background's color</h4><input id="colors" type="color"><br>
+                <h4>Music Sound Volume</h4><input id="volume" max="100" min="0" type="number" value="0">
+            </div>
+        </div>
+        <h1 id="title">Multiplication Tables</h1>
+        <div class="body_1">
+            <div class="one">
+                <h3 id="result2">result2</h3>
+            </div>
+            <div class="two" id="side">
+                <div class="arabic_sound" id="sound_div" title="shift s">
+                    <label for="sound" id="sound_label">Voice Assist</label> <input id="sound" type="checkbox">
+                </div>
+                <div class="arabic_sound" id="arabic_div" title="shift a :Arabic, shift e : English">
+                    <label for="arabic_choose" id="arabic_choose_label">Arabic Numbers</label>
+                    <input id="arabic_choose" type="checkbox">
+                </div>
+            </div><!-- three  -->
+            <div class="choose">
+                <h4 class="choose_div" id="mul">Multiplication Tables</h4>
+                <div class="choose_div" id="all_choose" title="z a : all, z x : no one">
+                    <label class="table" for="all_input" id="all_input_label">All</label>
+                    <input class="numbers_input" id="all_input" type="checkbox">
+                </div>
+                <div class="choose_div" title="1- , 1+">
+                    <label class="table" for="m1">NUM 1</label> <input class="numbers_input" id="m1" type="checkbox">
+                </div>
+                <div class="choose_div" title="2- , 2+">
+                    <label class="table" for="m2">NUM 2</label> <input class="numbers_input" id="m2" type="checkbox">
+                </div>
+                <div class="choose_div" title="3- , 3+">
+                    <label class="table" for="m3">NUM 3</label> <input class="numbers_input" id="m3" type="checkbox">
+                </div>
+                <div class="choose_div" title="4- , 4+">
+                    <label class="table" for="m4">NUM 4</label> <input class="numbers_input" id="m4" type="checkbox">
+                </div>
+                <div class="choose_div" title="5- , 5+">
+                    <label class="table" for="m5">NUM 5</label> <input class="numbers_input" id="m5" type="checkbox">
+                </div>
+                <div class="choose_div" title="6- , 6+">
+                    <label class="table" for="m6">NUM 6</label> <input class="numbers_input" id="m6" type="checkbox">
+                </div>
+                <div class="choose_div" title="7- , 7+">
+                    <label class="table" for="m7">NUM 7</label> <input class="numbers_input" id="m7" type="checkbox">
+                </div>
+                <div class="choose_div" title="8- , 8+">
+                    <label class="table" for="m8">NUM 8</label> <input class="numbers_input" id="m8" type="checkbox">
+                </div>
+                <div class="choose_div" title="9- , 9+">
+                    <label class="table" for="m9">NUM 9</label> <input class="numbers_input" id="m9" type="checkbox">
+                </div>
+                <div class="choose_div" title="0- , 0+">
+                    <label class="table" for="m10" id="ten">NUM 10</label> <input class="numbers_input" id="m10"
+                        type="checkbox">
+                </div>
+                <br><br>
+            </div>
+            <div class="four">
+                <button id="new" type="button">New test (n)</button><br>
+                <button id="start" type="button">Start the test (enter)</button>
+                <div class="img_right"></div>
+            </div>
+            <div class="sum" style="display: none;">
+                <label for="sum" id="label_sum">Sum of two numbers :</label> <input id="sum" readonly type="text">
+            </div>
+            <div class="five">
+                <label for="num1"></label> <input id="num1" name="num1" type="text"> <span class="symbol"
+                    id="multiple">×</span> <label for="num2"></label> <input id="num2" name="num2" type="text"> <span
+                    class='symbol' id="equal">=</span>
+                <div id="section_buttons">
+                    <input id="answer" name="answer" type="text"> <button id="plus1">▲</button> <button
+                        id="plus2">▲</button>
+                    <button id="minus1">▼</button> <button id="minus2">▼</button>
+                </div>
+            </div>
+            <div class="result">
+                <button id="result" type="button">Check the answer (space)</button>
+            </div>
+            <div class="six">
+                <button id="newExam_errors" type="button">Retest for errors (ctrl)</button> <button id="start_errors"
+                    type="button">Start bug testing (enter)</button>
+            </div>
+        </div>
+        <div class="side_container">
+            <button id="up">↑</button>
+            <div class="container2">
+                <ol class="subjects">
+                    <li class="subject" id="for_who_p_a">» Who is this site for?<br></li>
+                    <li class="subject" id="how_p_a">» How do I use the site?<br></li>
+                    <li class="subject" id="multipication_p_a">» Explanation the multiplication process<br></li>
+                    <li class="subject" id="division_p_a">» Explanation the division process<br></li>
+                    <li class="subject" id="general_tests_p_a">» Explanation of the general exams<br></li>
+                    <li class="subject" id="end_p_a">» Conclusion<br></li>
+                </ol>
+            </div><br>
+            <p class="title_p" id="for_who_p">Who is this site for?</p>
+            <p id="for_who_p1">This site is designed to teach primary school students to the second, third and fourth
+                grades, the multiplication and division tables and other, and to help the student understand and
+                memorize the multiplication tables.<br>
+                Parents can see the site well to know all the tools on the site and take full advantage of it.</p>
+            <p class="title_p" id="how_p">How do I use the site?</p>
+            <p id="how_p1"><span class="pp">①</span> Have a look at the site's tools first and read the information in
+                it and also in the 'Help' section, Then study the information in this section to learn the meaning of
+                the multiplication process before starting to memorize, then you can start by testing the first table or
+                two tables: one and two of the multiplication tables.<br>
+                <span class="pp">②</span> Do not move to memorizing a new table before memorizing the tables that
+                precede it well and without any error.<br>
+                <span class="pp">③</span> You can go to test the division tables only for the numbers you learned in the
+                multiplication tables and After studying the explanation here about division, to understand it better.
+                And to learn the meanings of the division process.<br>
+                <span class="pp">④</span> After mastering the tables you learned, you can move on to learning the
+                general exams and test yourself in it.<br>
+                <span class="pp">⑤</span> In the tests there is a timer that you can control its speed on the left of
+                the screen. Don't move up to a faster speed until you've mastered the previous speed.<br>
+                The ideal speed is the second and the third is for the challenge and it is not necessary for the student
+                to practice it.
+            </p><br>
+            <p class="title_p" id="multipication_p">Explanation the multiplication process</p>
+            <p id="multipication_p1">The multiplication process (or product) means the repetition, or: the number of
+                repetitions.<br>
+                For example: 2 x 4 means 4 twice or 2 four times, choose whichever is easier.<br>
+                So: 4 × 2 = 4 + 4.<br>
+                Or: 4 × 2 = 2 + 2 + 2 + 2.<br>
+                In both cases, the answer is 8. One may be easier than the other, for example:<br>
+                10 × 2 = 20<br>
+                10 + 10 = 20<br>
+                Easier than: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 20.<br>
+                <br>
+                <span class="note">Note 1:</span><br>
+                Multiplication is a commutative operation, that is:<br>
+                3 × 5 = 5 × 3<br>
+                4 × 6 = 6 × 4<br>
+                2 × 8 = 8 × 2<br>
+                <br>
+                <span class="note">Note 2:</span><br>
+                The student must memorize only one table at a time and not move to memorizing another table until he has
+                memorized the one before it in an excellent manner .<br>
+                <br>
+                <span class="note">Note 3:</span><br>
+                After memorizing tables from one to five, learn how to count with fingers for numbers greater than five,
+                this rule is explained after explaining the table number five.<br>
+                <br>
+                <span id="number1">֎ -Zero table:</span><br>
+                The result of multiplying any number by zero is always zero, because it means that the number will not
+                exist even once:<br>
+                1 × 0 = 0<br>
+                2 × 0 = 0<br>
+                3 × 0 = 0<br>
+                4 × 0 = 0<br>
+                5 × 0 = 0<br>
+                6 × 0 = 0<br>
+                7 × 0 = 0<br>
+                8 × 0 = 0<br>
+                9 × 0 = 0<br>
+                10 × 0 = 0<br>
+                <br>
+                <span id="number1_1">֎ - Table number one:</span><br>
+                The result of multiplying any number by one is always the same number that was multiplied by one,
+                because it means that the number will only be repeated once one will remain the same:<br>
+                1 × 1 = 1 <span class="space">..........</span>Meaning: one, only once<br>
+                1 × 2 = 2 <span class="space">.........</span>Two once or one twice<br>
+                1 × 3 = 3 <span class="space">.........</span>Three once or one 3 times<br>
+                1 × 4 = 4 <span class="space">..........</span>Four once or one 4 times<br>
+                1 × 5 = 5 <span class="space">..........</span>Five once or one 5 times<br>
+                1 × 6 = 6 <span class="space">..........</span>Six once or one 6 times<br>
+                1 × 7 = 7 <span class="space">..........</span>Seven once or one 7 times<br>
+                1 × 8 = 8 <span class="space">..........</span>Eight once or one 8 times<br>
+                1 × 9 = 9 <span class="space">..........</span>Nine once or one 9 times<br>
+                1 × 10 = 10 <span class="space">......</span>Ten once or one 10 times<br>
+                <br>
+                <span id="number2">֎ -Table number two:</span><br>
+                Any number multiplied by 2 means that it will be repeated twice:<br>
+                2 × 1 = 2 <span class="space">..........</span> Two for once<br>
+                2 × 2 = 4 <span class="space">..........</span> Two twice<br>
+                2 × 3 = 6 <span class="space">..........</span> Two 3 times or 3 twice<br>
+                2 × 4 = 8 <span class="space">..........</span> Two 4 times or four two times<br>
+                2 × 5 = 10 <span class="space">........</span> Two 5 times or five two times<br>
+                2 × 6 = 12 <span class="space">........</span> Two 6 times or six two times<br>
+                2 × 7 = 14 <span class="space">........</span> Two 7 times or seven two times<br>
+                2 × 8 = 16 <span class="space">........</span> Two 8 times or eight two times<br>
+                2 × 9 = 18 <span class="space">........</span> Two 9 times or nine two times<br>
+                2 × 10 = 10 <span class="space">......</span> Two 10 times or ten two times<br>
+                <br>
+                And so all the multiplication tables in the same way there are two options.<br>
+                <br>
+                It is preferable for the student to know the number two by two: 0, 2, 4, 6, 8, 10, 12, which are the
+                even numbers.<br>
+                And five by five:<br>
+                0 - 5 - 10 - 15 - 20 - 25 - 30 - 35 - 40 - 45 - 50 - 55 - 60 - 65 - 70 - 75 - 80 - 85 - 90 - 95 -
+                100<br>
+                <br>
+                <span id="number3">֎ -Table number three:</span><br>
+                Any number multiplied by 3 means that it will be repeated 3 times:<br>
+                3 × 1 = 3 <span class="space">............</span> One 3 times or three times<br>
+                3 × 2 = 6 <span class="space">............</span> Two 3 times or three times<br>
+                3 × 3 = 9 <span class="space">............</span> Three 3 times<br>
+                3 × 4 = 12 <span class="space">..........</span> Four 3 times or three 4 times<br>
+                3 × 5 = 15 <span class="space">..........</span> Five 3 times or three 5 times<br>
+                3 × 6 = 18 <span class="space">..........</span> Six 3 times or three 6 times<br>
+                3 × 7 = 21 <span class="space">..........</span> Seven 3 times or three 7 times<br>
+                3 × 8 = 24 <span class="space">..........</span> Eight 3 times or three 8 times<br>
+                3 × 9 = 27 <span class="space">..........</span> Nine 3 times or three 9 times<br>
+                3 × 10 = 30 <span class="space">........</span> Ten 3 times or three 10 times<br>
+                <br>
+                <span id="number4">֎ -Table number four:</span><br>
+                Any number multiplied by 4 means that it will be repeated 4 times:<br>
+                4 × 1 = 4 <span class="space">............</span> One 4 times or four 1 times<br>
+                4 × 2 = 8 <span class="space">............</span> Two 4 times or four 2 times<br>
+                4 × 3 = 12 <span class="space">..........</span> Three 4 times or four 3 times<br>
+                4 × 4 = 16 <span class="space">..........</span> Four 4 times<br>
+                4 × 5 = 20 <span class="space">..........</span> Five 4 times or four 5 times<br>
+                4 × 6 = 24 <span class="space">..........</span> Six 4 times or four 6 times<br>
+                4 × 7 = 28 <span class="space">..........</span> Seven 4 times or four 7 times<br>
+                4 × 8 = 32 <span class="space">..........</span> Eight 4 times or four 8 times<br>
+                4 × 9 = 36 <span class="space">..........</span> Nine 4 times or four 9 times<br>
+                4 × 10 = 40 <span class="space">........</span> Ten 4 times or four 10 times<br>
+                <br>
+                <span id="number5">֎ -Table number five:</span><br>
+                Any number multiplied by 5 means that it will be repeated 5 times:<br>
+                5 × 1 = 5 <span class="space">............</span> One 5 times or five 1 times<br>
+                5 × 2 = 10 <span class="space">..........</span> Two 5 times or five 2 times<br>
+                5 × 3 = 15 <span class="space">..........</span> Three 5 times or five 3 times<br>
+                5 × 4 = 20 <span class="space">..........</span> Four 5 times or five 4 times<br>
+                5 × 5 = 25 <span class="space">..........</span> Five 5 times<br>
+                5 × 6 = 30 <span class="space">..........</span> Six 5 times or five 6 times<br>
+                5 × 7 = 35 <span class="space">..........</span> Seven 5 times or five 7 times<br>
+                5 × 8 = 40 <span class="space">..........</span> Eight 5 times or five 8 times<br>
+                5 × 9 = 45 <span class="space">..........</span> Nine 5 times or five 9 times<br>
+                5 × 10 = 50 <span class="space">........</span> Ten 5 times or five 10 times<br>
+                <br>
+                <span id="rule">The method of counting with fingers for numbers greater than five:</span><br>
+                <br>
+                And it is an easy method for the student that he can use easily after learning it until he memorizes all
+                the multiplication tables.<br>
+                <br>
+                <span>First example:</span> 8 × 9<br>
+                We put in one hand the number of fingers of the product of subtraction: 10 - 9 = 1<br>
+                On the other hand, the result of subtracting 10 - 8 = 2<br>
+                Thus we will open one finger on the first hand and two fingers on the other hand.<br>
+                <img alt="example" class="example" src="../images/1p.JPG"><img alt="example" class="example"
+                    src="../images/2pp.jpg"><br>
+                Then we multiply 1 × 2<br>
+                1: Represents the number of outstretched fingers on the first hand<br>
+                2: Represents the number of outstretched fingers on the second hand<br>
+                2 × 1 = 2<br>
+                Then we gather the fingers that are not extended in the hands together, but ten ten, that is, each
+                finger represents ten, and since they are 7 fingers The result is: 70. The result of multiplication is:
+                70 + 2 = 72.<br>
+                <br>
+                <span>Second example:</span> 8 × 6<br>
+                10 - 8 = 2<br>
+                10 - 6 = 4<br>
+                On the first hand: two fingers<br>
+                On the second hand there are 4 fingers<br>
+                <img alt="example" class="example" src="../images/2pp.jpg"><img alt="example" class="example"
+                    src="../images/4p.JPG"><br>
+                4 × 2 = 8<br>
+                The number of unstretched fingers is 4 each of ten, totaling: 40<br>
+                Final result: 40 + 8 = 48<br>
+                There are two cases that we recommend memorizing instead of calculating them with fingers, because
+                calculating them may be more difficult for the student than memorizing them, and They:<br>
+                6 × 6 = 36<br>
+                6 × 7 = 42<br>
+                <br>
+                <span>Third example:</span>Finger counting method for 6 × 6:<br>
+                10 - 6 = 4<br>
+                10 - 6 = 4<br>
+                Multiplying the number of outstretched fingers: 4 × 4 = 16<br>
+                The number of unstretched fingers is 2 each of ten, totaling: 20<br>
+                <img alt="example" class="example" src="../images/4p.JPG"><img alt="example" class="example"
+                    src="../images/4p.JPG"><br>
+                20 + 16 = 36<br>
+                <br>
+                <span>Fourth example:</span>Finger counting method for 7 × 6:<br>
+                10- 6 = 4<br>
+                10 - 7 = 3<br>
+                Multiply the number of outstretched fingers: 4 × 3 = 12<br>
+                The number of unstretched fingers is 3 each of ten, totaling: 30<br>
+                <img alt="example" class="example" src="../images/4p.JPG"><img alt="example" class="example"
+                    src="../images/3p.JPG"><br>
+                30 + 12 = 42<br>
+                <br>
+                <span id="number6">֎ -Table number six:</span><br>
+                Any number multiplied by 6 means that it will be repeated 6 times:<br>
+                6 × 1 = 1 <span class="space">..........</span> One 6 times or six 1 times<br>
+                6 × 2 = 2 <span class="space">..........</span> Two 6 times or six 2 times<br>
+                6 × 3 = 3 <span class="space">..........</span> Three 6 times or six 3 times<br>
+                6 × 4 = 4 <span class="space">..........</span> Four 6 times or six 4 times<br>
+                6 × 5 = 5 <span class="space">..........</span> Five 6 times or six 5 times<br>
+                6 × 6 = 6 <span class="space">..........</span> Six 6 times<br>
+                6 × 7 = 7 <span class="space">..........</span> Seven 6 times or six 7 times<br>
+                6 × 8 = 8 <span class="space">..........</span> Eight 6 times or six 8 times<br>
+                6 × 9 = 9 <span class="space">..........</span> Nine 6 times or six 9 times<br>
+                6 × 10 = 10 <span class="space">......</span> Ten 6 times or six 10 times<br>
+                <br>
+                <span id="number7">֎ -Table number seven:</span><br>
+                Any number multiplied by 7 means that it will be repeated 7 times:<br>
+                7 × 1 = 7 <span class="space">............</span> One 7 times or seven 1 times<br>
+                7 × 2 = 14 <span class="space">..........</span> Two 7 times or seven 2 times<br>
+                7 × 3 = 21 <span class="space">..........</span> Three 7 timesor seven 3 times<br>
+                7 × 4 = 28 <span class="space">..........</span> Four 7 times or seven 4 times<br>
+                7 × 5 = 35 <span class="space">..........</span> Five 7 times or seven 5 times<br>
+                7 × 6 = 42 <span class="space">..........</span> Six 7 times or seven 6 times<br>
+                7 × 7 = 49 <span class="space">..........</span> Seven 7 times<br>
+                7 × 8 = 56 <span class="space">..........</span> Eight 7 times or seven 8 times<br>
+                7 × 9 = 63 <span class="space">..........</span> Nine 7 times or seven 9 times<br>
+                7 × 10 = 70 <span class="space">........</span> Ten 7 times or seven 10 times<br>
+                <br>
+                <br>
+                <span id="number8">֎ - Table number eight:</span><br>
+                Any number multiplied by 8 means that it will be repeated 8 times:<br>
+                8 × 1 = 8 <span class="space">............</span> One 8 times or eight 1 times<br>
+                8 × 2 = 16 <span class="space">..........</span> Two 8 times or eight 2 times<br>
+                8 × 3 = 24 <span class="space">..........</span> Three 8 times or eight 3 times<br>
+                8 × 4 = 32 <span class="space">..........</span> Four 8 times or eight 4 times<br>
+                8 × 5 = 40 <span class="space">..........</span> Five 8 times or eight 5 times<br>
+                8 × 6 = 48 <span class="space">..........</span> Six 8 times or eight 6 times<br>
+                8 × 7 = 56 <span class="space">..........</span> Seven 8 times or eight 7 times<br>
+                8 × 8 = 64 <span class="space">..........</span> Eight 8 times<br>
+                8 × 9 = 72 <span class="space">..........</span> Nine 8 times or eight 9 times<br>
+                8 × 10 = 80 <span class="space">........</span> Ten 8 times or eight 10 times<br>
+                <br>
+                <br>
+                <span id="number9">֎ -Table number nine:</span><br>
+                Any number multiplied by 9 means that it will be repeated 9 times:<br>
+                9 × 1 = 9 <span class="space">............</span> One 9 times or nine 1 times<br>
+                9 × 2 = 18 <span class="space">..........</span> Two 9 times or nine 2 times<br>
+                9 × 3 = 27 <span class="space">..........</span> Three 9 times<br>
+                9 × 4 = 36 <span class="space">..........</span> Four 9 times or nine 4 times<br>
+                9 × 5 = 45 <span class="space">..........</span> Five 9 times or nine 5 times<br>
+                9 × 6 = 54 <span class="space">..........</span> Six 9 times or nine 6 times<br>
+                9 × 7 = 63 <span class="space">..........</span> Seven 9 times or nine 7 times<br>
+                9 × 8 = 72 <span class="space">..........</span> Eight 9 times or nine 8 times<br>
+                9 × 9 = 81 <span class="space">..........</span> Nine 9 times or nine 9 times<br>
+                9 × 10 = 90 <span class="space">........</span> Ten 9 times or nine 10 times<br>
+                <br>
+                <br>
+                <span id="number10">֎ - Table number ten:</span><br>
+                Any number multiplied by 10 means that it will be repeated 10 times:<br>
+                10 × 1 = 10 <span class="space">..........</span> One 10 times or ten 1 times<br>
+                10 × 2 = 20 <span class="space">..........</span> Two 10 times or ten 2 times<br>
+                10 × 3 = 30 <span class="space">..........</span> Three 10 times or ten 3 times<br>
+                10 × 4 = 40 <span class="space">..........</span> Four 10 times or ten 4 times<br>
+                10 × 5 = 50 <span class="space">..........</span> Five 1 times or ten 5 times<br>
+                10 × 6 = 60 <span class="space">..........</span> Six 10 times or ten 6 times<br>
+                10 × 7 = 70 <span class="space">..........</span> Seven 10 times or ten 7 times<br>
+                10 × 8 = 80 <span class="space">..........</span> Eight 10 times or ten 8 times<br>
+                10 × 9 = 90 <span class="space">..........</span> Nine 10 times or ten 9 times<br>
+                10 × 10 = 100 <span class="space">......</span> Ten 10 times<br>
+                <br>
+                <br>
+                <span id="number11">֎ -Table number eleven:</span><br>
+                Any number multiplied by 11 means that it will be repeated 11 times:<br>
+                11 × 1 = 11 <span class="space">..........</span> One 11 times or eleven 1 times<br>
+                11 × 2 = 22 <span class="space">..........</span> Two 11 times or eleven 2 times<br>
+                11 × 3 = 33 <span class="space">..........</span> Three 11 times or eleven 3 times<br>
+                11 × 4 = 44 <span class="space">..........</span> Four 11 times or eleven 4 times<br>
+                11 × 5 = 55 <span class="space">..........</span> Five 11 times or eleven 5 times<br>
+                11 × 6 = 66 <span class="space">..........</span> Six 11 times or eleven 6 times<br>
+                11 × 7 = 77 <span class="space">..........</span> Seven 11 times or eleven 7 times<br>
+                11 × 8 = 88 <span class="space">..........</span> Eight 11 times or eleven 8 times<br>
+                11 × 9 = 99 <span class="space">..........</span> Nine 11 times or eleven 9 times<br>
+                11 × 10 = 110 <span class="space">......</span> Ten 11 times or eleven 10 times<br>
+                <br>
+                11 × 11 = 121 <span class="space">......</span> Eleven 11 times<br>
+                <br>
+                <span id="number12">֎ -Table number twelve:</span><br>
+                Any number multiplied by 12 means that it will be repeated 12 times:<br>
+                12 × 1 = 12 <span class="space">..........</span> One 12 times or twelve 1 times<br>
+                12 × 2 = 24 <span class="space">..........</span> Two 12 times or twelve 2 times<br>
+                12 × 3 = 36 <span class="space">..........</span> Three 12 times or twelve 3 times<br>
+                12 × 4 = 48 <span class="space">..........</span> Four 12 times or twelve 4 times<br>
+                12 × 5 = 60 <span class="space">..........</span> Five 12 times or twelve 5 times<br>
+                12 × 6 = 72 <span class="space">..........</span> Six 12 times or twelve 6 times<br>
+                12 × 7 = 84 <span class="space">..........</span> Seven 12 times or twelve 7 times<br>
+                12 × 8 = 96 <span class="space">..........</span> Eight 12 times or twelve 8 times<br>
+                12 × 9 = 108 <span class="space">........</span> Nine 12 times or twelve 9 times<br>
+                12 × 10 = 120 <span class="space">......</span> Ten 12 times or twelve 10 times<br>
+                <br>
+                12 × 11 = 132 <span class="space">......</span> Eleven 12 times or twelve 11 times<br>
+                12 × 12 = 144 <span class="space">......</span> Twelve 12 times<br>
+                <br>
+            </p>
+            <p class="title_p" id="division_p">Explanation of the division process</p>
+            <p class="" id="division_p1">There are three methods for the division process: distribution, quantity, and
+                inverse multiplication.<br>
+                We use one of the first or second methods, whichever is easier, at the beginning of learning the
+                division process to make it easier for the student understanding The division process is good.<br>
+                <span class="pp">① Distribution:</span><br>
+                <span class="note">Example:</span> 8 ÷ 2 = ?<br>
+                Eight things, let them be pens, for example, we want to distribute them equally to two people, for
+                example, how many pens are we give it to everyone one of them?<br>
+                The answer is 4, because 4 + 4 = 8.<br>
+                <span class="pp">② Quantity:</span><br>
+                <span class="note">Example:</span> 6 ÷ 3 = ?<br>
+                How many three are in the number six?<br>
+                Answer: 2.<br>
+                <span class="note">Note:</span>One of the two methods may be easier than the other, as per the
+                example:<br>
+                For example: 20 ÷ 2<br>
+                The way to distribute here is easier: 20 apples we distribute to two people equally, how many apples
+                does each take? The answer is 10<br>
+                While: 20 ÷ 10<br>
+                The quantum method here is easier: How many ten are there in the number twenty? Answer: 2<br>
+                <span class="pp">③ Reverse multiplication:</span><br>
+                Here the student must have memorized the multiplication tables for the numbers in the problems.<br>
+                And this is the method that the student will rely on after understanding the meaning of division in the
+                two previous ways, because he cannot use them only for easy cases.<br>
+                <span class="note">Example:</span> 30 ÷ 6 = ?<br>
+                What is the number that if we multiply it by the divisor (ie 6) the result is the number that we divide
+                (ie 30)?<br>
+                Here the student should remember from the multiplication tables:<br>
+                5 × 6 = 30<br>
+                At first, the student may find it difficult to remember because it is a search process that is going on
+                in his mind now about two numbers that are 30 and one of them is 6.<br>
+                And in case he does not remember directly, he can refer to Table No. 6 in his mind in this example:<br>
+                He says:<br>
+                6 × 1 = 6 <span class="space">.........</span>It is not the output we are looking for<br>
+                6 × 2 = 12 <span class="space">.......</span>It is not the output we are looking for<br>
+                6 × 3 = 18 <span class="space">.......</span>It is not the output we are looking for<br>
+                6 × 4 = 24 <span class="space">.......</span>It is not the output we are looking for<br>
+                6 × 5 = 30 <span class="space">.......</span>And it is the result we are looking for, so the answer is
+                5, meaning that:<br>
+                30 ÷ 6 = 5<br>
+                <br>
+                <span class="note">Note 1:</span>Division is not commutative.<br>
+                That is, 9 ÷ 3 does not equal 3 ÷ 9.<br>
+                <br>
+                <span class="note">Note 2:</span><br>
+                Every multiplication of two numbers results in two divisions<br>
+                They are: the product of the multiplication process, if we divide it by one of the two numbers, the
+                result is the other number , for example:<br>
+                6 × 5 = 30<br>
+                Result:<br>
+                30 ÷ 6 = 5<br>
+                30 ÷ 5 = 6<br>
+                <br>
+            </p>
+            <p class="title_p" id="general_tests_p">Explanation of the general exams</p>
+            <p class="" id="general_tests_p1">I chose one type of problem that is difficult for students at this stage,
+                namely:<br>
+                Two numbers whose sum is known and their product is known, so what are they?<br>
+                In order for the student to get used to this type of problem, the student can know one of the two
+                numbers, which is the table he chose.<br>
+                If he chooses more than one table, then one of the two numbers is from one of the tables he chose.<br>
+                <br>
+                <span class="note">Example:</span><br>
+                Two numbers multiplied by 24 and their sum is 10, so what are they?<br>
+                The student looks in his mind at the multiplication tables and remembers that:<br>
+                8 × 3 = 24<br>
+                6 × 4 = 24<br>
+                The sum of the two numbers in the first case is 11 contrary to what is required, so they are not the
+                answer.<br>
+                The sum of the two numbers in the second case is 10, which is required.<br>
+                So the two numbers are: 6, 4.<br>
+                <br>
+                <span class="note">Note:</span><br>
+                This type of problem is solved in this elementary stage by remembering and experimenting, meaning that
+                he tries two numbers each time and he sees the result of multiplying them, then if it is what is
+                required, he tries what is the product of their sum.
+            </p>
+            <p class="title_p" id="end_p">Conclusion</p>
+            <p class="" id="end_p1">We hope that the site will satisfy you and that the students will benefit from
+                practicing, understanding and memorizing the multiplication and division tables better and faster.<br>
+                We are pleased to communicate with you and express your opinions and comments. The site was designed
+                entirely by individual efforts, so any development or expansion of the site will need time and support.
+            </p>
+
+            <pre>
+
+
+
+</pre><span class="note cont1">Contact:</span>
+            <p class="cont2">Email: engineer.shadirahhal@gmail.com<br>
+                <br>
+                To donate:<br>
+                IBAN: AE620500000000014580480<br>
+                Account No.: 14580480<br>
+                <br>
+                Website designer and developer: Shadi Rahhal
+            </p>
+            <pre>
+
+
+            </pre>
+        </div>
+        <p class="paragraph1">- The student chooses the table he wants to memorize, then press <span
+                class="press">(Start the test)</span> or from the keyboard press <span class="press">(enter)</span>.<br>
+            - Enter the answer in the box, either by directly entering the number or by pressing the left mouse button,
+            or the number can be increased and decreased by the keyboard, the up arrow and down arrow.<br>
+            - After entering the answer, you can check the correctness of your answer by pressing the <span
+                class="press">(Check Answer)</span> button or from the keyboard press <span
+                class="press">(space)</span>.<br>
+            Then press the button <span class="press">(Start the test)</span> or <span class="press">(enter)</span>.<br>
+            Each time the question changes, you have to press the button <span class="press">(Start the test)</span> or
+            the key <span class="press">(enter)</span>.<br>
+            - After the test is finished, press the button <span class="press">(Retest for errors)</span> or from the
+            keyboard press <span class="press">(ctrl)</span>.<br>
+            Then press the <span class="press">(Start bug testing)</span> button or <span class="press">(enter)</span>
+            every time the question changes.<br>
+            The student must continue to retest the errors until there is no error left, then he has memorized the
+            table.<br>
+            - You can change the background color of the page by pressing the small circular button.<br>
+            <span class="press">NOTE:</span> You can change the background color to any color you like by
+            double-clicking on the title. Then double click it again (or double click the color change box) to hide the
+            color change box.<br>
+            - To select the table with the keys press: <span class="press">+ number</span>.<br>
+            And to cancel the selection of the number with the keys, press: <span class="press">- number</span>.<br>
+            - To select Arabic numbers with the keys press: <span class="press">shift a</span>.<br>
+            - And to select the English numbers with the keys press: <span class="press">shift e</span>.<br>
+            - To activate or disable the audio for people with special needs, click on the keys: <span
+                class="press">shift s</span>.<br>
+            - To end the test and clean the screen, press the title button, or press the key: <span
+                class="press">(esc)</span> on the keyboard.<br>
+        </p>
+        <div>
+            <!-- ________________ audio files ___________________________ -->
+            <audio class="audio" controls="" src="../voice/+all_e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/+1e.m4a">one</audio> <audio class="audio" controls="" src="../voice/+2e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/+3e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/+4e.m4a">one</audio> <audio class="audio" controls="" src="../voice/+5e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/+6e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/+7e.m4a">one</audio> <audio class="audio" controls="" src="../voice/+8e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/+9e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/+10e.m4a">one</audio> <audio class="audio" controls="" src="../voice/-1e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/-2e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/-3e.m4a">one</audio> <audio class="audio" controls="" src="../voice/-4e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/-5e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/-6e.m4a">one</audio> <audio class="audio" controls="" src="../voice/-7e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/-8e.m4a">one</audio> <audio class="audio" controls=""
+                src="../voice/-9e.m4a">one</audio> <audio class="audio" controls="" src="../voice/-10e.m4a">one</audio>
+            <audio class="audio" controls="" src="../voice/-all_e.m4a">one</audio> <audio class="audio"
+                id="exam_errors_voice" src="../voice/retest_e.m4a">-</audio> <audio class="audio" id="next_voice"
+                src="../voice/next_e.m4a">-</audio> <audio class="audio" id="space_voice"
+                src="../voice/check%20_e.m4a">-</audio> <audio class="audio" id="start_exam_errors_voice"
+                src="../voice/start-errors-e.m4a">-</audio> <audio class="audio" id="start_new_exam_voice"
+                src="../voice/new_exam_voice.mp3">-</audio> <audio class="audio" id="a0"
+                src="../voice/Zero.m4a"></audio> <audio class="audio" id="a1" src="../voice/1.m4a"></audio> <audio
+                class="audio" id="a2" src="../voice/2.m4a"></audio> <audio class="audio" id="a3"
+                src="../voice/3.m4a"></audio> <audio class="audio" id="a4" src="../voice/4.m4a"></audio> <audio
+                class="audio" id="a5" src="../voice/5.m4a"></audio> <audio class="audio" id="a6"
+                src="../voice/6.m4a"></audio> <audio class="audio" id="a7" src="../voice/7.m4a"></audio> <audio
+                class="audio" id="a8" src="../voice/8%20.m4a"></audio> <audio class="audio" id="a9"
+                src="../voice/9.m4a"></audio> <audio class="audio" id="a10" src="../voice/10.m4a"></audio> <audio
+                class="audio" id="a11" src="../voice/11.m4a"></audio> <audio class="audio" id="a12"
+                src="../voice/12.m4a"></audio> <audio class="audio" id="a13" src="../voice/13.m4a"></audio> <audio
+                class="audio" id="a14" src="../voice/14.m4a"></audio> <audio class="audio" id="a15"
+                src="../voice/15.m4a"></audio> <audio class="audio" id="a16" src="../voice/16.m4a"></audio> <audio
+                class="audio" id="a17" src="../voice/17.m4a"></audio> <audio class="audio" id="a18"
+                src="../voice/18.m4a"></audio> <audio class="audio" id="a19" src="../voice/19.m4a"></audio> <audio
+                class="audio" id="a20" src="../voice/20.m4a"></audio> <audio class="audio" id="a21"
+                src="../voice/21.m4a"></audio> <audio class="audio" id="a22" src="../voice/22.m4a"></audio> <audio
+                class="audio" id="a23" src="../voice/23.m4a"></audio> <audio class="audio" id="a24"
+                src="../voice/24.m4a"></audio> <audio class="audio" id="a25" src="../voice/25.m4a"></audio> <audio
+                class="audio" id="a26" src="../voice/26.m4a"></audio> <audio class="audio" id="a27"
+                src="../voice/27.m4a"></audio> <audio class="audio" id="a28" src="../voice/28.m4a"></audio> <audio
+                class="audio" id="a29" src="../voice/29.m4a"></audio> <audio class="audio" id="a30"
+                src="../voice/30.m4a"></audio> <audio class="audio" id="a31" src="../voice/31.m4a"></audio> <audio
+                class="audio" id="a32" src="../voice/32.m4a"></audio> <audio class="audio" id="a33"
+                src="../voice/33.m4a"></audio> <audio class="audio" id="a34" src="../voice/34.m4a"></audio> <audio
+                class="audio" id="a35" src="../voice/35.m4a"></audio> <audio class="audio" id="a36"
+                src="../voice/36.m4a"></audio> <audio class="audio" id="a37" src="../voice/37.m4a"></audio> <audio
+                class="audio" id="a38" src="../voice/38.m4a"></audio> <audio class="audio" id="a39"
+                src="../voice/39.m4a"></audio> <audio class="audio" id="a40" src="../voice/40.m4a"></audio> <audio
+                class="audio" id="a41" src="../voice/41.m4a"></audio> <audio class="audio" id="a42"
+                src="../voice/42.m4a"></audio> <audio class="audio" id="a43" src="../voice/43.m4a"></audio> <audio
+                class="audio" id="a44" src="../voice/44.m4a"></audio> <audio class="audio" id="a45"
+                src="../voice/45.m4a"></audio> <audio class="audio" id="a46" src="../voice/46.m4a"></audio> <audio
+                class="audio" id="a47" src="../voice/47.m4a"></audio> <audio class="audio" id="a48"
+                src="../voice/48.m4a"></audio> <audio class="audio" id="a49" src="../voice/49.m4a"></audio> <audio
+                class="audio" id="a50" src="../voice/50.m4a"></audio> <audio class="audio" id="a51"
+                src="../voice/51.m4a"></audio> <audio class="audio" id="a52" src="../voice/52.m4a"></audio> <audio
+                class="audio" id="a53" src="../voice/53.m4a"></audio> <audio class="audio" id="a54"
+                src="../voice/54.m4a"></audio> <audio class="audio" id="a55" src="../voice/55.m4a"></audio> <audio
+                class="audio" id="a56" src="../voice/56.m4a"></audio> <audio class="audio" id="a57"
+                src="../voice/57.m4a"></audio> <audio class="audio" id="a58" src="../voice/58.m4a"></audio> <audio
+                class="audio" id="a59" src="../voice/59.m4a"></audio> <audio class="audio" id="a60"
+                src="../voice/60.m4a"></audio> <audio class="audio" id="a61" src="../voice/61.m4a"></audio> <audio
+                class="audio" id="a62" src="../voice/62.m4a"></audio> <audio class="audio" id="a63"
+                src="../voice/63.m4a"></audio> <audio class="audio" id="a64" src="../voice/64.m4a"></audio> <audio
+                class="audio" id="a65" src="../voice/65.m4a"></audio> <audio class="audio" id="a66"
+                src="../voice/66.m4a"></audio> <audio class="audio" id="a67" src="../voice/67.m4a"></audio> <audio
+                class="audio" id="a68" src="../voice/68.m4a"></audio> <audio class="audio" id="a69"
+                src="../voice/69.m4a"></audio> <audio class="audio" id="a70" src="../voice/70.m4a"></audio> <audio
+                class="audio" id="a71" src="../voice/71.m4a"></audio> <audio class="audio" id="a72"
+                src="../voice/72.m4a"></audio> <audio class="audio" id="a73" src="../voice/73.m4a"></audio> <audio
+                class="audio" id="a74" src="../voice/74.m4a"></audio> <audio class="audio" id="a75"
+                src="../voice/75.m4a"></audio> <audio class="audio" id="a76" src="../voice/76.m4a"></audio> <audio
+                class="audio" id="a77" src="../voice/77.m4a"></audio> <audio class="audio" id="a78"
+                src="../voice/78.m4a"></audio> <audio class="audio" id="a79" src="../voice/79.m4a"></audio> <audio
+                class="audio" id="a80" src="../voice/80.m4a"></audio> <audio class="audio" id="a81"
+                src="../voice/81.m4a"></audio> <audio class="audio" id="a82" src="../voice/82.m4a"></audio> <audio
+                class="audio" id="a83" src="../voice/83.m4a"></audio> <audio class="audio" id="a84"
+                src="../voice/84.m4a"></audio> <audio class="audio" id="a85" src="../voice/85.m4a"></audio> <audio
+                class="audio" id="a86" src="../voice/86.m4a"></audio> <audio class="audio" id="a87"
+                src="../voice/87.m4a"></audio> <audio class="audio" id="a88" src="../voice/88.m4a"></audio> <audio
+                class="audio" id="a89" src="../voice/89.m4a"></audio> <audio class="audio" id="a90"
+                src="../voice/90.m4a"></audio> <audio class="audio" id="a91" src="../voice/91.m4a"></audio> <audio
+                class="audio" id="a92" src="../voice/92.m4a"></audio> <audio class="audio" id="a93"
+                src="../voice/93.m4a"></audio> <audio class="audio" id="a94" src="../voice/94.m4a"></audio> <audio
+                class="audio" id="a95" src="../voice/95.m4a"></audio> <audio class="audio" id="a96"
+                src="../voice/96.m4a"></audio> <audio class="audio" id="a97" src="../voice/97.m4a"></audio> <audio
+                class="audio" id="a98" src="../voice/98.m4a"></audio> <audio class="audio" id="a99"
+                src="../voice/99.m4a"></audio> <audio class="audio" id="a100" src="../voice/100.m4a"></audio> <audio
+                class="audio" id="awrong" src="../voice/wrong_e.m4a"></audio> <audio class="audio" id="right"
+                src="../voice/right-answer-e.m4a"></audio> <audio class="audio" id="correct"
+                src="../voice/wrong-answer-e.m4a"></audio>
+            <!--  ______________________ correct & wrong Tunes ____________________ -->
+            <audio class="audio" id="correct_tune1" src="../voice/correct1.mp3"></audio>
+            <audio class="audio" id="correct_tune2" src="../voice/correct2.mp3"></audio>
+            <audio class="audio" id="correct_tune3" src="../voice/correct3.mp3"></audio>
+            <audio class="audio" id="correct_tune4" src="../voice/correct4.mp3"></audio>
+            <audio class="audio" id="correct_tune5" src="../voice/correct5.mp3"></audio>
+            <audio class="audio" id="correct_tune6" src="../voice/correct6.mp3"></audio>
+            <audio class="audio" id="wrong_tune1" src="../voice/wronganswer1.mp3"></audio>
+            <audio class="audio" id="wrong_tune2" src="../voice/wronganswer2.mp3"></audio>
+            <audio class="audio" id="wrong_tune3" src="../voice/wronganswer3.mp3"></audio>
+            <audio class="audio" id="wrong_tune4" src="../voice/wronganswer4.mp3"></audio>
+            <audio class="audio" id="wrong_tune5" src="../voice/wronganswer5.mp3"></audio>
+            <audio class="audio" id="wrong_tune6" src="../voice/wronganswer6.mp3"></audio>
+            <audio class="audio" id="wenner" src="../voice/wenner1.mp3"></audio>
+            <audio class="audio" id="yourmark_a" src="../voice/mark.m4a"></audio>
+            <audio class="audio" id="level_a" src="../voice/level.m4a"></audio>
+            <audio class="audio" id="weak_a" src="../voice/weak.m4a"></audio>
+            <audio class="audio" id="middle_a" src="../voice/middle.m4a"></audio>
+            <audio class="audio" id="good_a" src="../voice/good.m4a"></audio>
+            <audio class="audio" id="vgood_a" src="../voice/vgood.m4a"></audio>
+            <audio class="audio" id="excellent_a" src="../voice/excellent.m4a"></audio>
+            <audio class="audio" id="vexcellent_a" src="../voice/Vexcellent.m4a"></audio>
+            <audio class="audio" id="vexcellent" src="../voice/Vexcellent.m4a"></audio>
+            <audio class="audio" id="errors_a" src="../voice/errors.m4a"></audio>
+            <audio class="audio songs" controls="" id="song1" src="../voice/newmusic.mp3"></audio>
+            <audio class="audio songs" controls="" id="song2" src="../voice/Kronicle.mp3"></audio>
+            <audio class="audio songs" controls="" id="song3" src="../voice/Wavecont.mp3"></audio>
+            <!-- _____________________ end correct & wrong Tunes ______________________  -->
+        </div>
+        <script src="../js/multiple_english.js">
+        </script>
+    </body>
+
+</html>

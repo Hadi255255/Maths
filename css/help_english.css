@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+
+* {
+    font-family: 'Times New Roman', 'Unna';
+}
+
+h1 {
+    font-size: 35px;
+    padding: 10px 30px;
+    margin-top: 150px;
+}
+
+.paragraph1 {
+    direction: ltr;
+    text-align: left;
+    /* color: black; */
+    word-wrap: break-word;
+    overflow-wrap: break-word !important;
+    overflow-x: visible;
+    font-size: 26px;
+    position: relative;
+    z-index: 3;
+    margin-left: 30px !important;
+    margin-right: 150px;
+    clear: both;
+    padding-bottom: 80px;
+}
+
+/* _________________________________________ New Model _________________________  */
+
+
+@keyframes r1 {
+    0% {
+        transform: rotateX(0deg) rotateY(-270deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(-360deg);
+    }
+}
+
+
+@keyframes r2 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(-90deg);
+    }
+}
+
+@keyframes r3 {
+    0% {
+        transform: rotateX(-270deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateX(-360deg);
+    }
+
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+
+@keyframes r4 {
+    0% {
+        transform: rotateX(0deg) rotateY(-180deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(-270deg);
+    }
+}
+
+@keyframes r5 {
+    0% {
+        transform: rotateX(-20deg) rotateY(-90deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg) rotateY(-70deg);
+    }
+}
+
+@keyframes r6 {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateX(-270deg);
+    }
+}
+
+.press {
+    font-style: italic;
+    color: rgb(150, 10, 0);
+    font-weight: 900;
+}
+
+.color_container {
+    position: relative;
+    top: 100px;
+    margin-bottom: 220px !important;
+}
+
+
+/* _____________________________ Big & small Mobile ________________________ */
+@media all and (max-width:500px) {
+    h1 {
+        font-size: 30px !important;
+        margin-top: 200px;
+        margin-bottom: -170px;
+    }
+
+    .paragraph1 {
+        width: 90% !important;
+        position: relative;
+        left: 120px !important;
+        top: 100px !important;
+        padding-right: 0 !important;
+        padding-left: 10px !important;
+        margin-top: 0px;
+        padding-bottom: 80px;
+    }
+
+}
+
+@media all and (min-width:501px) and (max-width:1100px) {
+    h1 {
+        font-size: 30px !important;
+        margin-top: 220px;
+        margin-bottom: -300px;
+
+    }
+
+    .paragraph1 {
+        top: 200px;
+        padding-bottom: 80px;
+    }
+
+    .color_container {
+        position: relative;
+        top: 100px !important;
+        margin-bottom: -60px !important;
+        z-index: 0;
+        float: right;
+        right: 50%;
+        transform: translateX(50%) !important;
+    }
+}

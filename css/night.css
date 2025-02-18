@@ -1,0 +1,499 @@
+body {
+    background-image: none !important;
+    background-color: black;
+}
+
+.toolbar {
+    box-shadow: 5px 5px 15px 15px rgb(160, 160, 160);
+}
+
+
+.toolbar div {
+    color: rgb(230, 230, 230);
+}
+
+.toolbar div:not(.option) {
+    background-image: linear-gradient(180deg, lightblue, black 10%, black 50%) !important;
+}
+
+.toolbar div:hover:not(.option:hover) {
+    background-image: linear-gradient(180deg, rgb(230, 230, 230), black 15%, black 50%) !important;
+    color: rgb(230, 230, 230) !important;
+}
+
+.effects_w {
+    color: rgb(230, 230, 230) !important;
+}
+
+.tune:hover #song_number,
+.effects:hover .effects_w {
+    color: rgb(230, 230, 230) !important;
+}
+
+.arabic-lan {
+    border-right: 3px solid rgb(100, 100, 100);
+    border-left: 3px solid rgb(100, 100, 100);
+}
+
+.eng-lan {
+    border-right: 3px solid rgb(100, 100, 100);
+    border-left: 3px solid rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(100, 100, 100);
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+}
+
+/* ___________________________ تحديث  */
+
+.subject {
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(20, 20, 20), rgb(0, 0, 0));
+    border: 2px solid rgb(50, 50, 50) !important;
+    margin-bottom: 8px;
+    text-decoration: underline wavy white double 5px !important;
+}
+
+.subject:hover {
+    background-image: linear-gradient(180deg, black, rgb(50, 50, 50), black);
+    text-shadow: none !important;
+}
+
+#arabic_choose_home,
+#ar_arabic_choose_home {
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(20, 20, 20), rgb(0, 0, 0));
+    color: rgb(230, 230, 230);
+    box-shadow: none;
+    border-color: grey;
+    margin-bottom: -2px !important;
+}
+
+#sound_home {
+    border: none;
+}
+
+#check_sound_home {
+    background-image: repeating-radial-gradient(rgb(90, 90, 90), rgb(80, 80, 80), rgb(50, 50, 50), black);
+    border: 1px solid rgb(230, 230, 230);
+}
+
+#check_sound_home,
+.check_sound_home {
+    background-image: repeating-radial-gradient(rgb(100, 100, 100), rgb(20, 20, 20), black) !important;
+    box-shadow: 0 0 4px 1px rgb(230, 230, 230);
+    border: none;
+    border-radius: 50%;
+    display: inline;
+    position: relative;
+    top: -4px;
+    left: -2px;
+    text-align: center;
+    padding: 1px 4px;
+
+}
+
+#arabic_word {
+    color: rgb(230, 230, 230);
+    /* font-size: 50px; */
+    top: 0px;
+}
+
+/* _______________________________________ */
+.light_gen,
+.home,
+.mul,
+.division,
+.general,
+.help {
+    background-image: repeating-linear-gradient(0deg, rgb(10, 10, 10), rgb(30, 30, 30), rgb(90, 90, 90), rgb(30, 30, 30), rgb(10, 10, 10)) !important;
+}
+
+.option {
+    border-color: rgb(155, 155, 0) !important;
+    color: rgb(230, 230, 230);
+    background-color: rgb(20, 20, 20) !important;
+}
+
+.option:hover {
+    box-shadow: 0px 0px 10px 1px rgb(230, 230, 230);
+    background-image: linear-gradient(0deg, black, rgb(20, 20, 20));
+    color: rgb(230, 230, 230);
+}
+
+.choose div,
+.arabic_sound {
+    background-image: repeating-linear-gradient(0deg, black, rgb(20, 20, 20), rgb(40, 40, 40), rgb(20, 20, 20), black);
+}
+
+.choose div:hover,
+.arabic_sound:hover {
+    background-image: repeating-linear-gradient(0deg, black, rgb(30, 30, 30), black);
+    box-shadow: 0 0 5px 3px rgb(120, 120, 120);
+}
+
+input[type=checkbox],
+input[type=radio] {
+    background-image: radial-gradient(rgb(90, 90, 90), rgb(80, 80, 80), rgb(50, 50, 50), black);
+    border: 1px solid rgb(230, 230, 230) !important;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    background-image: radial-gradient(rgb(100, 100, 100), rgb(20, 20, 20), black);
+    box-shadow: 0 0 4px 1px rgb(230, 230, 230);
+
+}
+
+#num1,
+#num2,
+#answer {
+    background-image: linear-gradient(-20deg, black, rgb(0, 0, 0), rgb(20, 20, 20));
+}
+
+button {
+    border-color: rgb(155, 155, 0) !important;
+    background-image: linear-gradient(0deg, black, black, rgb(30, 30, 30), black, black) !important;
+    color: rgb(230, 230, 230);
+    box-shadow: 0 0 5px 1px rgb(155, 155, 0) !important;
+}
+
+button:hover:not(#plus_minus, #plus_minus2,
+    #plus1, #plus2, #minus1, #minus2) {
+    box-shadow: 0 0 5px 2px rgb(230, 230, 230) !important;
+}
+
+#result2 {
+    border-color: rgb(80, 80, 10);
+    background-image: linear-gradient(0deg, rgb(70, 70, 70), rgb(100, 100, 100), rgb(70, 70, 70));
+    color: rgb(230, 230, 230);
+    box-shadow: 0 0 5px 1px rgb(230, 230, 230);
+}
+
+#plus1,
+#plus2,
+#minus1,
+#minus2,
+#plus_minus,
+#plus_minus2 {
+    box-shadow: none !important;
+    background-image: none !important;
+    border-color: rgb(150, 150, 0) !important;
+    background-color: rgb(100, 100, 0) !important;
+}
+
+#error {
+    color: rgb(255, 132, 151);
+}
+
+
+.home:hover,
+.mul:hover,
+.division:hover,
+.general:hover,
+.help:hover {
+    background-color: rgb(50, 50, 50) !important;
+}
+
+.subject:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.pp,
+span:not(.symbol, .press),
+.title_p {
+    font-size: larger;
+    color: lightpink;
+}
+
+
+#for_who_p:active,
+#how_p:active,
+#multipication_p:active,
+#division_p:active,
+#general_tests_p:active,
+#end_p:active {
+    text-shadow: 0 0 20px rgb(230, 230, 230) !important;
+
+}
+
+h1,
+.paragraph1 {
+    color: rgb(230, 230, 230);
+}
+
+h1 {
+    background-image: linear-gradient(0deg, black, black, rgb(60, 60, 60), black, black);
+    box-shadow: 0 0 5px 3px rgb(155, 155, 0);
+}
+
+#poppy {
+    background-image: linear-gradient(0deg, black, black, rgb(60, 60, 60), black, black);
+}
+
+h1:hover {
+    box-shadow: 0 0 4px 2px rgb(155, 155, 0);
+}
+
+h1:active {
+    box-shadow: none;
+}
+
+.speed {
+    background-color: grey;
+    color: rgb(255, 255, 100);
+    border-color: rgb(155, 155, 0) !important;
+    opacity: 0.8;
+}
+
+.speed_label:hover {
+    color: rgb(230, 230, 230);
+}
+
+.speed_level {
+    background-color: rgb(40, 40, 40);
+    color: rgb(230, 230, 230);
+    border-color: rgb(155, 155, 0) !important;
+}
+
+#num1,
+#num2,
+#answer,
+#mul,
+#result,
+.choose div,
+.arabic_sound,
+.choose div,
+.arabic_sound {
+    border-color: rgb(155, 155, 0) !important;
+    background-color: black;
+    color: rgb(230, 230, 230);
+}
+
+.retest {
+    border-bottom: 3px solid rgb(150, 150, 0);
+    /* border-right: 1px solid rgb(200,200,200); */
+    /* border-left: 1px solid rgb(200,200,200); */
+}
+
+#plus1,
+#plus2,
+#minus1,
+#minus2,
+#plus_minus,
+#plus_minus2 {
+    border: 1px solid rgb(155, 155, 0) !important;
+    color: rgb(20, 20, 0) !important;
+}
+
+#model {
+    border: 1px solid grey;
+}
+
+#model:hover {
+    border-color: rgb(230, 230, 230);
+}
+
+
+#sum {
+    background-image: linear-gradient(-20deg, black, rgb(0, 0, 0), rgb(20, 20, 20));
+    border-color: rgb(150, 150, 0);
+    color: rgb(230, 230, 230);
+}
+
+#label_sum {
+    color: rgb(230, 230, 230);
+    background-color: black;
+}
+
+input::placeholder {
+    color: grey !important;
+}
+
+.side_container * {
+    color: rgb(230, 230, 230);
+}
+
+.space {
+    color: transparent !important;
+}
+
+
+@keyframes border1 {
+    0% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100) !important;
+    }
+
+    1% {
+        box-shadow: 0 0 10px 4px rgb(230, 230, 230);
+    }
+
+    17% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+}
+
+@keyframes border2 {
+    0% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    17% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    18% {
+        box-shadow: 0 0 10px 4px rgb(230, 230, 230);
+    }
+
+    34% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+}
+
+@keyframes border3 {
+    0% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    34% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    35% {
+        box-shadow: 0 0 10px 4px rgb(230, 230, 230);
+
+    }
+
+    51% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+
+    }
+
+    100% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+}
+
+@keyframes border4 {
+    0% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    51% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    52% {
+        box-shadow: 0 0 10px 4px rgb(230, 230, 230);
+
+    }
+
+    68% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+
+    }
+
+    100% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+}
+
+@keyframes border5 {
+    0% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+
+    }
+
+    68% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    69% {
+        box-shadow: 0 0 10px 4px rgb(230, 230, 230);
+
+    }
+
+    85% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+}
+
+@keyframes border6 {
+    0% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    85% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+
+    86% {
+        box-shadow: 0 0 10px 4px rgb(230, 230, 230);
+
+    }
+
+    100% {
+        box-shadow: 0 0 1px 2px rgb(100, 100, 100);
+    }
+}
+
+.black_sound {
+    color: rgb(230, 230, 230);
+}
+
+#arabic_word,
+.black_arabic {
+    color: rgb(230, 230, 230) !important;
+    top: -4px !important;
+}
+
+.skype,
+.skype-d {
+    border-bottom: 4px solid rgb(140, 140, 140);
+}
+
+.skype1,
+.skype1-d {
+    border-top: 4px solid rgb(140, 140, 140);
+}
+
+.red {
+    box-shadow: 10px 10px 25px 10px rgb(230, 230, 230);
+}
+
+/* ___________________________________________ */
+
+.press {
+    font-style: italic;
+    color: rgb(255, 200, 200);
+}
+
+.title_p,
+.subject,
+.arabic_sound_home,
+#sound_label,
+button,
+.sum,
+.choose div,
+.arabic_sound,
+#mul {
+    color: rgb(230, 230, 230);
+}
+
+#section_buttons.correct::after {
+    color: lightgreen;
+}
+
+#section_buttons.wrong::after {
+    color: rgb(255, 120, 120);
+}

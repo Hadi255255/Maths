@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30mm" height="30mm" viewBox="0 0 85.039 85.039">
+  <title>icons svg</title>
+  <g>
+    <g>
+      <rect x="64.185" y="16.941" width="13.363" height="13.363" transform="translate(37.46 -43.191) rotate(45)" fill="#32e678"/>
+      <rect x="54.736" y="26.39" width="13.363" height="13.363" transform="translate(41.373 -33.742) rotate(45)" fill="#32e678"/>
+      <rect x="45.287" y="35.838" width="13.363" height="13.363" transform="translate(45.287 -24.294) rotate(45)" fill="#32e678"/>
+      <rect x="35.838" y="45.287" width="13.363" height="13.363" transform="translate(49.201 -14.845) rotate(45)" fill="#32e678"/>
+      <rect x="26.39" y="54.736" width="13.363" height="13.363" transform="translate(53.115 -5.396) rotate(45)" fill="#32e678"/>
+    </g>
+    <rect x="7.492" y="35.838" width="13.363" height="13.363" transform="translate(-25.915 22.476) rotate(-45)" fill="#32e678"/>
+    <rect x="16.941" y="45.287" width="13.363" height="13.363" transform="translate(-29.829 31.925) rotate(-45)" fill="#32e678"/>
+    <rect x="45.287" y="35.838" width="13.363" height="13.363" transform="translate(-14.845 49.201) rotate(-45)" fill="#32e678"/>
+  </g>
+</svg>

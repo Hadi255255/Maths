@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    font-family: 'Times New Roman', 'Lora' !important;
+    direction: ltr;
+}
+
+*:not(.toolbar, #song_number) {
+    -webkit-user-select: auto;
+    /* Safari */
+    -ms-user-select: auto;
+    /* IE 10 and IE 11 */
+    user-select: auto;
+    /* Standard syntax */
+    -moz-user-select: auto;
+    -o-user-select: auto;
+}
+
+body {
+    direction: rtl;
+    background-repeat: no-repeat;
+    background-size: 100% 500%;
+    background-position-x: right;
+    overflow-x: hidden;
+    animation: appearhome 400ms linear;
+}
+
+/* ________ side : sound - arabic_number _____________________ */
+#side_home {
+    position: relative;
+    right: 48px;
+    top: -75px;
+    height: 48px;
+    direction: ltr;
+    margin-left: 80px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+#sound_div_home,
+#arabic_choose_home {
+    border: grey 1px solid;
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 5px;
+    width: 149px;
+
+}
+
+/*____________ input___________  */
+#sound_home {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -1.3mm !important;
+    left: 0px;
+    color: black;
+}
+
+#sound_label {
+    position: relative;
+    left: 40px;
+    top: -42px;
+}
+
+#arabic_choose_home {
+    position: relative;
+    left: -4px;
+    top: -8px !important;
+    visibility: hidden;
+    color: black;
+}
+
+input[type=checkbox] {
+    /* accent-color: darkgreen; */
+    border-radius: 50%;
+    appearance: none;
+    /* إخفاء الشكل الأفتراضي  */
+    -webkit-appearance: none;
+    /* webkit دعم متصفحات تستعمل */
+    outline: none;
+    background-image: repeating-radial-gradient(rgb(180, 255, 180), rgb(130, 230, 130), rgb(60, 180, 60), rgb(0, 160, 0));
+    border: 1px solid darkgreen;
+    /* padding-left: 14px;
+    padding-right: 14px; */
+    padding: 17px;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    position: relative;
+    top: -4px !important;
+}
+
+input[type=checkbox]:checked::after,
+input[type=radio]:checked::after {
+    float: left;
+    content: "✓";
+    color: white;
+    font-size: 22px;
+    position: relative;
+    left: -8px !important;
+    top: -16px;
+    font-weight: normal;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    transform: rotateY(360deg);
+}
+
+/* _________________ end  */
+.container2 {
+    margin-top: -80px !important;
+}
+
+.subjects li {
+    width: 420px;
+}
+
+li,
+p,
+span {
+    direction: ltr;
+    text-align: left;
+}
+
+span {
+    padding-right: 22px;
+    font-size: 26px;
+}
+
+.pp {
+    color: darkgreen;
+    margin-right: 5px;
+}
+
+.margin {
+    color: black;
+    margin-right: -25px;
+}
+
+@keyframes appearhome {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: initial;
+    }
+}
+
+#title,
+.subject,
+.space {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+#title {
+    position: relative;
+    top: -30px !important;
+    width: 200px;
+}
+
+#arabic_choose {
+    display: block;
+    width: 160px !important;
+    border: 2px solid grey;
+    padding: 12px;
+    margin-top: 5px;
+}
+
+h1 {
+    clear: both;
+    transition: all 100ms linear;
+    -webkit-transition: all 100ms linear;
+    z-index: 2;
+    padding-bottom: 26px !important;
+    margin-top: 70px;
+}
+
+@keyframes border1 {
+    0% {
+        box-shadow: none;
+    }
+
+    1% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    17% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes border2 {
+    0% {
+        box-shadow: none;
+    }
+
+    17% {
+        box-shadow: none;
+    }
+
+    18% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    34% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes border3 {
+    0% {
+        box-shadow: none;
+    }
+
+    34% {
+        box-shadow: none;
+    }
+
+    35% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    51% {
+        box-shadow: none;
+
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes border4 {
+    0% {
+        box-shadow: none;
+    }
+
+    51% {
+        box-shadow: none;
+    }
+
+    52% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    68% {
+        box-shadow: none;
+
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes border5 {
+    0% {
+        box-shadow: none;
+
+    }
+
+    68% {
+        box-shadow: none;
+    }
+
+    69% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    85% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes border6 {
+    0% {
+        box-shadow: none;
+    }
+
+    85% {
+        box-shadow: none;
+    }
+
+    86% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+.subject {
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    padding: 12px;
+    transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+}
+
+.subject:active {
+    font-weight: bold;
+}
+
+#for_who_p_a {
+    animation: border1 10s infinite linear;
+}
+
+#how_p_a {
+    animation: border2 10s infinite linear;
+}
+
+#multipication_p_a {
+    animation: border3 10s infinite linear;
+}
+
+#division_p_a {
+    animation: border4 10s infinite linear;
+}
+
+#general_tests_p_a {
+    animation: border5 10s infinite linear;
+}
+
+#end_p_a {
+    animation: border6 10s infinite linear;
+}
+
+p {
+    color: black;
+}
+
+#for_who_p1,
+#how_p1,
+#multipication_p1,
+#division_p1,
+#general_tests_p1 {
+    position: relative;
+}
+
+.subject:hover {
+    background-color: rgb(100, 200, 100);
+    word-spacing: 1px;
+    transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
+
+}
+
+.title_p {
+    position: relative;
+    color: crimson;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    margin-left: 0 !important;
+    left: 40px !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+
+}
+
+#for_who_p:active,
+#how_p:active,
+#multipication_p:active,
+#division_p:active,
+#general_tests_p:active,
+#end_p:active {
+    text-shadow: 0 0 20px white !important;
+
+}
+
+#multipication_p {
+    padding-top: 40px;
+}
+
+p {
+    overflow-wrap: break-word;
+    padding-top: 20px;
+}
+
+span:not(.effects_w) {
+    color: crimson;
+    font-weight: bold;
+}
+
+.example {
+    width: 100px;
+    height: 120px;
+    display: inline;
+}
+
+.space {
+    color: transparent !important;
+}
+
+
+.toolbar {
+    margin-left: -40px !important;
+    direction: ltr !important;
+}
+
+.subjects {
+    position: relative;
+    left: 30px;
+    direction: ltr;
+}
+
+
+#img1 {
+    right: -25px;
+    transform: rotateY(180deg);
+}
+
+#model {
+    float: none;
+    right: 70px !important;
+    top: 10px;
+    margin: 0 !important;
+
+}
+
+.cont1 {
+    position: relative;
+    left: 20px;
+}
+
+#img1:hover {
+    transform: rotateY(180deg) scale(95%);
+}
+
+#img1:active {
+    transform: rotateY(180deg) scale(90%);
+}
+
+.padding4:not(.mul, .mul_2) {
+    padding-top: 20px !important;
+}
+
+.mul_2 {
+    padding-top: 12px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* _________________________________________ New Model _________________________  */
+.container {
+    position: relative;
+    float: right;
+    top: 50px;
+    right: 60px;
+}
+
+.cont2 {
+    color: darkblue;
+}
+
+.color_container {
+    top: 0px;
+    left: -55px;
+    margin-bottom: -30px !important;
+    width: 30vw;
+}
+
+#up {
+    display: none;
+    position: fixed;
+    top: 400px;
+    right: 5px;
+    width: 36px !important;
+    height: 36px !important;
+    cursor: pointer !important;
+    z-index: 2;
+}
+
+@keyframes r1 {
+    0% {
+        transform: rotateX(0deg) rotateY(-270deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(-360deg);
+    }
+}
+
+
+@keyframes r2 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(-90deg);
+    }
+}
+
+@keyframes r3 {
+    0% {
+        transform: rotateX(-270deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateX(-360deg);
+    }
+
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+
+@keyframes r4 {
+    0% {
+        transform: rotateX(0deg) rotateY(-180deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(-270deg);
+    }
+}
+
+@keyframes r5 {
+    0% {
+        transform: rotateX(-20deg) rotateY(-90deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg) rotateY(-70deg);
+    }
+}
+
+@keyframes r6 {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateX(-270deg);
+    }
+}
+
+/* ____________________________________  @media  mobile ____________________________________________________ */
+
+/* _____________________________ Small Mobile ________________________ */
+@media all and (max-width:380px) {
+    h1 {
+        margin-bottom: -180px !important;
+    }
+
+    h1:active {
+        transform: scale(98%);
+    }
+
+    .container {
+        top: 10px !important;
+        right: 15px !important;
+    }
+
+    .mul_2 {
+        padding-top: 10px !important;
+        letter-spacing: 2px;
+
+    }
+
+    .padding4:not(.mul, .mul_2, .help_m, .mul_m) {
+        padding-top: 10px !important;
+    }
+
+
+    h1 {
+        font-size: 24px !important;
+        width: fit-content !important;
+    }
+
+    .side_container {
+        top: 70px;
+    }
+
+    #side_home {
+        position: absolute;
+        left: -135px;
+        top: -20px;
+        height: 48px;
+        direction: ltr;
+        text-align: left;
+    }
+
+    #arabic_choose_home {
+        top: -55px !important;
+        left: 220px !important;
+        visibility: hidden;
+    }
+
+    .container2 {
+        top: 35px !important;
+        width: 270px;
+        margin: auto;
+    }
+
+    .subject {
+        word-wrap: break-word;
+        width: 320px !important;
+        margin-left: -20px !important;
+    }
+
+    #for_who_p1,
+    #how_p1,
+    #multipication_p1,
+    #division_p1,
+    #general_tests_p1,
+    #end_p1 {
+        margin-left: 50px;
+        margin-right: 0px !important;
+
+    }
+
+    #end_p1 {
+        margin-left: 0px;
+        width: 220px;
+
+    }
+
+    .title_p {
+        margin-left: -25px !important;
+        width: fit-content;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+    }
+
+    #multipication_p,
+    #how_p {
+        letter-spacing: 2px;
+    }
+
+    .subject {
+        width: 250px !important;
+        font-size: 22px;
+    }
+
+    #model {
+        top: 30px;
+        right: 20px !important;
+    }
+
+    .cont1 {
+        margin-left: 10px;
+    }
+
+    .cont2 {
+        color: darkblue;
+        left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .color_container {
+        top: 50px;
+        margin-bottom: 100px !important;
+        width: 80vw;
+        height: 160px;
+        left: 0px;
+    }
+
+    .control_color h4 {
+        width: 140px;
+    }
+}
+
+/* _____________________________ Big Mobile ________________________ */
+@media all and (min-width:380px) and (max-width:500px) {
+    h1 {
+        margin-top: 80px !important;
+        margin-bottom: -260px !important;
+    }
+
+    .mul_2 {
+        padding-top: 20px !important;
+    }
+
+    .padding4:not(.mul, .mul_2, .help_m, .mul_m) {
+        padding-top: 12px !important;
+    }
+
+    h1 {
+        font-size: 34px !important;
+        margin: 0;
+        margin-bottom: -180px !important;
+        right: 40%;
+        clear: both;
+    }
+
+    #side_home {
+        position: absolute;
+        left: -135px;
+        top: -20px;
+        height: 48px;
+        direction: ltr;
+        text-align: left;
+    }
+
+    #arabic_choose_home {
+        top: -9px !important;
+        left: 60px;
+    }
+
+    .container2 {
+        top: 35px !important;
+        width: 330px;
+        margin-left: -6vw;
+        margin-bottom: 50px;
+    }
+
+    .subject {
+        word-wrap: break-word;
+        width: 320px !important;
+        margin-left: -20px !important;
+    }
+
+    #for_who_p1,
+    #how_p1,
+    #multipication_p1,
+    #division_p1,
+    #general_tests_p1,
+    #end_p1 {
+        margin-left: 32px;
+        margin-right: 0px !important;
+        left: -50px;
+    }
+
+    #end_p1 {
+        margin-left: 0px;
+    }
+
+    .title_p {
+        left: -4vw !important;
+        margin: 0 !important;
+        width: 300px;
+    }
+
+    #multipication_p {
+        letter-spacing: 2px;
+    }
+
+    .cont1 {
+        margin-left: 10px;
+    }
+
+    .cont2 {
+        color: darkblue;
+        left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .option {
+        padding-top: 12px !important;
+        max-height: 50px;
+    }
+
+    .color_container {
+        top: 60px;
+        left: 0px;
+        margin-bottom: 100px !important;
+        width: 85vw;
+        height: 100px;
+    }
+
+
+}
+
+/* _____________________________ Tab Mobile ________________________ */
+@media all and (min-width:501px) and (max-width:767px) {
+
+    h1 {
+        left: -20px;
+        font-size: 34px;
+        /* padding-top: 8px; */
+    }
+
+}
+
+@media all and (min-width:501px) and (max-width:600px) {
+
+    .effects {
+        padding-top: 8px !important;
+    }
+
+    .padding4:not(.mul, .mul_2, .gen_m, .effects, .help_m) {
+        padding-top: 12px !important;
+    }
+
+}
+
+/* _____________________________ Tab ________________________ */
+@media all and (min-width:501px) and (max-width:1100px) {
+    .mul_m {
+        padding-top: 20px !important;
+    }
+
+
+    h1 {
+        margin-top: 80px;
+        margin-bottom: -170px;
+        font-size: 26px;
+        /* width: fit-content !important; */
+    }
+
+    h1:hover {
+        transform: scale(99%);
+    }
+
+    h1:active {
+        transform: scale(98%);
+    }
+
+    .subject {
+        margin-right: 15px !important;
+    }
+
+
+    p {
+        padding-left: 20px;
+        margin-right: 50px !important;
+    }
+
+    .container2 {
+        position: relative;
+        top: 0px;
+
+    }
+
+    /* ________ side : sound - arabic_number _____________________ */
+    #side_home {
+        position: absolute;
+        left: -115px;
+        top: -55px;
+        height: 48px;
+        direction: ltr;
+        text-align: left;
+    }
+
+    #sound_div_home,
+    #arabic_choose_home {
+        position: relative;
+        border: grey 2px solid;
+        display: inline-block;
+        height: 50px;
+        padding: 10px;
+        width: 180px;
+    }
+
+    #arabic_choose_home {
+        top: -12px !important;
+        left: 60px;
+    }
+
+    /*____________ input___________  */
+    #sound_home {
+        height: 34px;
+        width: 34px;
+        position: relative;
+
+    }
+
+    #sound_label {
+        position: relative;
+        top: -10px;
+    }
+
+    #for_who_p1,
+    #how_p1,
+    #multipication_p1,
+    #division_p1,
+    #general_tests_p1,
+    #end_p1 {
+        position: relative;
+        left: 50px;
+    }
+
+    #multipication_p {
+        width: fit-content;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+    }
+
+    .color_container {
+        text-align: left;
+        position: relative;
+        top: -60px;
+        margin-bottom: -100px !important;
+        width: 350px;
+        height: 100px;
+    }
+}
+
+/* _______________________________________________________________ */
+.press,
+span {
+    padding: 0;
+}

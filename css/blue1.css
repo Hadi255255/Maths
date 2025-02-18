@@ -1,0 +1,410 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.toolbar {
+    box-shadow: 5px 5px 20px 10px rgba(0, 200, 255, 0.8) !important;
+}
+
+
+.toolbar div:not(.select) {
+    padding: 15px 0 15px 0;
+}
+
+.toolbar div:not(.option) {
+    background-image: linear-gradient(0deg, rgb(10, 20, 130), rgb(10, 50, 170), rgb(10, 20, 130)) !important;
+    color: white;
+}
+
+.toolbar div:hover:not(.option:hover) {
+    background-image: repeating-linear-gradient(0deg, rgba(40, 150, 220), rgba(60, 190, 255), rgba(40, 150, 220)) !important;
+    color: black !important;
+}
+
+
+.subject {
+    background-image: linear-gradient(0deg, rgb(80, 200, 240), rgb(100, 220, 255));
+    color: black;
+    border: 1px solid rgb(100, 100, 100);
+    margin-bottom: 7px;
+    /* box-shadow: none !important; */
+}
+
+.subject:hover {
+    background-image: linear-gradient(0deg, rgb(60, 200, 220), rgb(80, 200, 240) 80%);
+}
+
+#arabic_choose_home,
+#ar_arabic_choose_home,
+#sound_div_home {
+    background-image: linear-gradient(0deg, rgb(80, 200, 240), rgb(100, 220, 255) 80%);
+    color: black;
+    box-shadow: none;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+#arabic_choose_home:hover,
+#ar_arabic_choose_home:hover,
+#sound_div_home:hover {
+    background-image: linear-gradient(0deg, rgb(60, 200, 220), rgb(80, 200, 240) 80%);
+}
+
+#sound_home:not(.sound_home_e) {
+    position: relative;
+    top: -32px !important;
+}
+
+#check_sound_home {
+    background-image: radial-gradient(rgb(180, 200, 255), rgb(130, 180, 240), rgb(110, 150, 220));
+    border: 1px solid darkblue;
+}
+
+#check_sound_home,
+.check_sound_home {
+    background-image: radial-gradient(rgb(0, 100, 170), rgb(0, 100, 255)) !important;
+    box-shadow: 0 0 10px 4px lightblue;
+    border: 1px solid darkblue;
+    border-radius: 50%;
+    display: inline;
+    padding: 0px 4px;
+    position: relative;
+    top: -4px;
+    left: -2px;
+    text-align: center;
+    padding: 1px 4px;
+}
+
+#arabic_word {
+    color: black;
+}
+
+/* 
+#arabic_word:hover {
+    color: white;
+} */
+.light_gen,
+.home,
+.mul,
+.division,
+.general,
+.help {
+    /* color: #ffd500 !important; */
+}
+
+.option {
+    color: white;
+    background-color: rgb(80, 200, 255) !important;
+    border-left: 3px solid rgb(255, 255, 100) !important;
+    border-right: 3px solid rgb(255, 255, 100) !important;
+    border-color: rgb(255, 255, 100) !important;
+
+}
+
+.option:hover {
+    background-image: linear-gradient(0deg, rgb(50, 170, 230), rgb(50, 200, 255), rgb(50, 170, 230)) !important;
+    box-shadow: 0px 0px 10px 3px white !important;
+    text-shadow: 0 0 8px white !important;
+    color: black !important;
+}
+
+.arabic-lan {
+    border-right: 1px solid rgb(50, 150, 255);
+    border-left: 1px solid rgb(50, 150, 255);
+}
+
+.eng-lan {
+    border: 1px solid rgb(50, 150, 255);
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    border-bottom: 1px solid rgb(0, 120, 230);
+}
+
+#mul {
+    background-image: none;
+    background-color: rgb(160, 230, 255);
+}
+
+.choose div,
+.choose_div,
+.arabic_sound {
+    background-image: linear-gradient(180deg, rgb(180, 230, 255), rgb(150, 200, 255));
+    border-color: rgb(155, 155, 0) !important;
+}
+
+.choose_div:nth-last-child(2) {
+    border-color: rgb(155, 155, 0) !important;
+    /* color: red; */
+}
+
+input[type=checkbox],
+input[type=radio] {
+    background-image: radial-gradient(rgb(80, 180, 255), rgb(30, 160, 240), rgb(10, 100, 220));
+    border: 1px solid darkblue;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    background-image: radial-gradient(rgb(0, 100, 170), rgb(0, 100, 255));
+    box-shadow: 0 0 10px 4px lightblue;
+}
+
+@keyframes sea {
+    0% {
+        background-image: linear-gradient(180deg, rgb(200, 240, 255) 60%, rgb(120, 210, 255));
+
+    }
+
+    25% {
+        background-image: linear-gradient(180deg, rgb(200, 240, 255) 56%, rgb(120, 210, 255));
+    }
+
+    100% {
+        background-image: linear-gradient(180deg, rgb(200, 240, 255) 52%, rgb(100, 200, 255));
+
+    }
+}
+
+#num1,
+#num2,
+#answer {
+    background-image: linear-gradient(180deg, rgb(200, 240, 255) 50%, rgb(120, 210, 255));
+    color: black;
+    border-color: rgb(155, 155, 0);
+    animation: sea 10s infinite linear;
+}
+
+
+#result2 {
+    border-color: rgb(155, 155, 0);
+    background-image: linear-gradient(0deg, rgb(120, 200, 255), rgb(200, 240, 255) 60%);
+    box-shadow: 0 1px 10px 1px darkblue;
+}
+
+button:not(#plus_minus, #plus_minus2, #plus1, #plus2, #minus1, #minus2) {
+    border: 1px solid rgb(155, 155, 0) !important;
+    /* border-color: rgb(10, 10, 120); */
+    background-image: linear-gradient(0deg, rgb(180, 210, 255), rgb(220, 240, 255), rgb(180, 210, 255)) !important;
+    box-shadow: 0 3px 5px 1px darkblue !important;
+}
+
+button:hover:not(#plus_minus, #plus_minus2,
+    #plus1, #plus2, #minus1, #minus2, button:active) {
+    box-shadow: 0 3px 2px 0px rgb(0, 80, 255) !important;
+}
+
+button:active {
+    color: rgb(10, 10, 120);
+    box-shadow: none !important;
+}
+
+
+#plus_minus,
+#plus_minus2,
+#plus1,
+#plus2,
+#minus1,
+#minus2 {
+    box-shadow: none;
+}
+
+.pp,
+span:not(.press, .symbol),
+.title_p {
+    font-size: larger;
+}
+
+.pp {
+    color: darkblue;
+}
+
+
+.speed {
+    background-color: rgb(1, 60, 150);
+    color: rgb(255, 255, 150);
+    border-color: rgb(155, 155, 0);
+    opacity: 0.8;
+}
+
+.speed_label:hover {
+    color: rgb(1, 1, 90);
+}
+
+.speed_level {
+    background-color: rgb(255, 255, 150) !important;
+    color: rgb(1, 1, 120);
+    border-color: rgb(155, 155, 0);
+}
+
+
+.arabic_sound {
+    border-color: rgb(155, 155, 0);
+}
+
+
+.symbol {
+    color: purple;
+}
+
+input::placeholder {
+    color: rgb(200, 0, 200) !important;
+}
+
+.retest {
+    border-bottom: 2px solid rgb(155, 155, 0);
+}
+
+#plus1,
+#plus2,
+#minus1,
+#minus2,
+#plus_minus,
+#plus_minus2 {
+    border: 1px solid rgb(220, 220, 60);
+    background-image: none !important;
+    box-shadow: none !important;
+    background-color: darkblue !important;
+}
+
+#sum {
+    background-image: linear-gradient(180deg, rgb(160, 230, 255) 60%, rgb(120, 210, 255));
+    border-color: rgb(155, 155, 0);
+}
+
+#label_sum {
+    color: black;
+    background-color: rgb(200, 255, 255);
+}
+
+#sum:active {
+    box-shadow: none !important;
+}
+
+.red {
+    box-shadow: 10px 10px 25px 10px blue;
+}
+
+
+
+@keyframes border1 {
+    0% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    1% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    17% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+}
+
+@keyframes border2 {
+    0% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    17% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    18% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    34% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+}
+
+@keyframes border3 {
+    0% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    34% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    35% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    51% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+}
+
+@keyframes border4 {
+    0% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    51% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    52% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    68% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+}
+
+@keyframes border5 {
+    0% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    68% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    69% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    85% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+}
+
+@keyframes border6 {
+    0% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    85% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+
+    86% {
+        box-shadow: 0 0 5px 4px #ffd500;
+    }
+
+    100% {
+        box-shadow: 0 0 1px 1px rgb(0, 100, 255);
+    }
+}

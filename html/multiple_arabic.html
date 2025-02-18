@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="ar" xml:lang="ar" xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="ar" name="language" content="language of page"
+            property="https://nicemaths.com/html/multiple_arabic.html">
+        <meta name="description" content="
+        هذا الموقع يحتوي تمارين تساعد الطلاب على فهم و حفظ جداول الضرب  ">
+        <!-- <meta http-equiv="Content-Type" content="text/html"> -->
+        <meta name="author" content="Shadi Rahhal">
+        <meta name="language" content="arabic">
+        <meta name="title" content="تمارين جداول الضرب باللغة العربية">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="notranslate">
+        <meta name="revised" content="Saturday, March 10th, 2023, 6:00 am">
+        <meta name="rating" content="safe for kids">
+        <meta name="copyright" content="Copyright 2023">
+        <meta http-equiv="default-style" content="1">
+        <!-- <meta http-equiv="Cache-Control" content="no-cache"> -->
+        <meta name="format-detection" content="telephone=yes">
+        <meta name="HandheldFriendly" content="true">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Social Media Tags -->
+        <meta property="og: title" content="تمارين جداول الضرب باللغة العربية ">
+        <meta property="og: type" content="website">
+        <meta property="og: image" content="../image/icon4">
+        <meta property="og: url" content="https://nicemaths.com/">
+
+        <meta property="og: description" content="طريقة مميزة لحفظ جداول الضرب والقسمة واختبارات المستوى">
+        <meta property="og: locale" content="arabic">
+        <meta property="og: site_name" content="Nice Maths">
+
+        <title> تمارين جداول الضرب باللغة العربية </title>
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notonaskharabicui.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"> -->
+        <link rel="icon" type="image/x-icon" href="../images/icon4.png" id="icon3">
+        <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
+        <link rel="stylesheet" href="../css/multiple_arabic.css" id="main_css">
+        <link rel="stylesheet" href="#home_arabic_css" id="home_arabic_css">
+        <link rel="stylesheet" href="#model_css" id="model_css">
+
+    </head>
+
+    <body>
+        <div class="toolbar">
+            <a href="#home_arabic.html" id="home_arabic">
+                <div class="home_m" id="light_home"><img alt="home" class="img_home" src="../images/home.svg">
+                </div>
+            </a>
+            <div class="select">
+                <img alt="language" class="img_lang" src="../images/lang.svg">
+                <div class="option arabic-lan">العربية</div>
+                <a href="multiple_english.html">
+                    <div class="option eng-lan">English</div>
+                </a>
+            </div>
+            <a href="#multiple_arabic.html" id="multiple_arabic">
+                <div class="mul padding4 mul_m" id="light_mul">جداول الضرب </div>
+            </a>
+            <a href="#division_arabic.html" id="division_arabic">
+                <div class="padding4 div_m" id="light_div">جداول القسمة </div>
+            </a>
+            <a href="#general_arabic.html" id="general_arabic">
+                <div class="padding4 gen_m" id="light_gen">اختبارات عامة</div>
+            </a>
+            <a href="#help_arabic.html" id="help_arabic">
+                <div class="padding4 help_m" id="help">تعليمات</div>
+            </a>
+            <div class="tune" id="tune">
+                موسيقى
+                <br> <span id="song_number"></span>
+            </div>
+            <div class="effects" id="effects">
+                <span class="effects_w"> تأثير الصوت</span>
+            </div>
+        </div>
+        <div class="timer"></div>
+        <div class="speed_float">
+            <div class="move">
+                <div class="speed">«</div>
+                <div class="speed_level">
+                    <form class="speed_form" name="form">
+                        <input id="first" type="radio" name="speed_input" value="first" checked>
+                        <label class="speed_label" for="first">سرعة 1</label>
+                        <input id="second" type="radio" name="speed_input" value="scond">
+                        <label class="speed_label" for="second">سرعة 2</label>
+                        <input id="third" type="radio" name="speed_input" value="third">
+                        <label class="speed_label" for="third">سرعة 3</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="face green"><img src="../images/svg_green.svg" class="model" alt="green"></div>
+                <div class="face blue"><img src="../images/svg_blue.svg" class="model" alt="blue"></div>
+                <div class="face white"><img src="../images/svg_light.svg" class="model" alt="white"></div>
+                <div class="face black"><img src="../images/svg_night.svg" class="model" alt="black"></div>
+                <div class="face yellow">⭐</div>
+                <div class="face pink">❀</div>
+            </div>
+            <div style="clear:both ;"></div>
+            <div class="face red"></div>
+        </div>
+        <div class="color_container">
+            <div class="control_color">
+                <button class="close">×</button>
+                <h3>لون الخلفية</h3>
+                <input type="color" id="colors"><br>
+                <h3 id="sound_level">مستوى صوت الموسيقى</h3>
+                <input type="number" id="volume" max="100" min="0" value=0>
+            </div>
+        </div>
+        <h1 id="title">جداول الضرب</h1>
+        <div class="body_1">
+            <div class="one">
+                <h3 id="result2">result2</h3>
+            </div>
+            <div id="side" class="two">
+                <div id="sound_div" class="arabic_sound" title="shift s">
+                    <label for="sound" id="sound_label"> مساعد صوتي </label>
+                    <input id="sound" type="checkbox">
+                </div>
+                <div id="arabic_div" class="arabic_sound" title="shift a :Arabic, shift e : English">
+                    <label for="arabic_choose" id="arabic_choose_label"> أرقام عربية </label>
+                    <input id="arabic_choose" type="checkbox"><br>
+                </div>
+            </div>
+            <!-- three  -->
+            <div class="choose">
+                <h2 id="mul" class="choose_div"> الجداول </h2>
+                <div class="choose_div audio_choose" id="all_choose" title="z a : all, z x : no one">
+                    <label class="table table_all" id="all_input_label" for="all_input">الـجـمـيـع</label>
+                    <input id="all_input" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="1- , 1+">
+                    <label class="table table1" for="m1">جدول رقم 1</label>
+                    <input id="m1" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="2- , 2+">
+                    <label class="table table2" for="m2">جدول رقم 2</label>
+                    <input id="m2" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="3- , 3+">
+                    <label class="table table3" for="m3">جدول رقم 3</label>
+                    <input id="m3" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="4- , 4+">
+                    <label class="table table4" for="m4">جدول رقم 4</label>
+                    <input id="m4" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="5- , 5+">
+                    <label class="table table5" for="m5">جدول رقم 5</label>
+                    <input id="m5" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="6- , 6+">
+                    <label class="table table6" for="m6">جدول رقم 6</label>
+                    <input id="m6" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="7- , 7+">
+                    <label class="table table7" for="m7">جدول رقم 7</label>
+                    <input id="m7" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="8- , 8+">
+                    <label class="table table8" for="m8">جدول رقم 8</label>
+                    <input id="m8" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="9- , 9+">
+                    <label class="table table9" for="m9">جدول رقم 9</label>
+                    <input id="m9" class="numbers_input" type="checkbox">
+                </div>
+                <div class="choose_div audio_choose" title="0- , 0+">
+                    <label class="table table10" id="ten" for="m10">جدول رقم 10</label>
+                    <input id="m10" class="numbers_input" type="checkbox">
+                </div>
+                <br><br>
+            </div>
+            <div class="four">
+                <button type="button" id="new"> اختبار جديد (n)</button><br>
+                <button type="button" id="start">ابدأ الاختبار (enter)</button>
+                <div class="img_right"></div>
+            </div>
+            <div class="sum" style="display: none;">
+                <label for="sum" id="label_sum">مجموع الرقمين :</label>
+                <input type="text" id="sum" readonly disabled>
+            </div>
+            <div class="five">
+                <label for="num1"></label>
+                <input id="num1" type="text" name="num1">
+                <span class="symbol" id="multiple">×</span>
+                <label for="num2"></label>
+                <input id="num2" type="text" name="num2">
+                <span class='symbol' id="equal">=</span>
+                <div id="section_buttons">
+                    <input id="answer" type="text" name="answer">
+                    <button id="plus1">▲</button>
+                    <button id="plus2">▲</button>
+                    <button id="minus1">▼</button>
+                    <button id="minus2">▼</button>
+                </div>
+
+            </div>
+            <div class="result"> <button type="button" id="result">تحقق من الجواب (space) </button></div>
+            <div class="six">
+                <button id="newExam_errors" type="button">أعد اختبار الأخطاء(ctrl)</button>
+                <button id="start_errors" type="button">ابدأ اختبار الأخطاء (enter)</button>
+            </div>
+        </div>
+        <div class="side_container">
+
+            <div id="side_home">
+                <a id="arabic_choose_home" class="animation" href="#home_arabic_arabic.html">
+                    <span id="arabic_word" class="black_arabic"> أرقام عربية</span>
+                    <pre id="check_sound_home">   </pre>
+                </a>
+                <br>
+            </div>
+            <button id="up">↑</button>
+            <div class="container2">
+                <ol class="subjects">
+                    <li id="for_who_p_a" class="subject">» لمن هذا الموقع</li>
+                    <li id="how_p_a" class="subject">» كيف أستخدم الموقع </li>
+                    <li id="multipication_p_a" class="subject">» شرح عملية الضرب </li>
+                    <li id="division_p_a" class="subject">» شرح عملية القسمة</li>
+                    <li id="general_tests_p_a" class="subject">» شرح الإختبارات العامة</li>
+                    <li id="end_p_a" class="subject"> » الخاتمة</li>
+
+                </ol>
+            </div>
+            <br>
+            <p id="for_who_p" class="title_p">لمن هذا الموقع</p>
+
+            <p id="for_who_p1">
+
+                صمم هذا الموقع لتعليم طلاب المرحلة الابتدائية للصف الثاني و الثالث والرابع، جداول الضرب والقسمة و
+                غيرها،
+                و لمساعدة الطالب على فهم و حفظ جداول الضرب.
+                <br>
+                يمكن للأهل الاطلاع على الموقع جيداً لمعرفة جميع الأدوات في الموقع والاستفادة منه بشكل كامل.
+            </p>
+            <p id="how_p" class="title_p">كيف أستخدم الموقع</p>
+            <p id="how_p1">
+
+                <span class="pp">①</span> اطلع على أدوات الموقع أولاً و اقرأ المعلومات فيه و كذلك في قسم ' تعليمات '،
+                ثم ادرس المعلومات في هذا القسم لتتعلم معنى عملية الضرب قبل البدء بالحفظ،
+                ثم يمكنك البدء باختبار أول جدول أو جدولين: الواحد والاثنين من جداول الضرب.
+                <br>
+                <span class="pp">②</span> لا تنتقل إلى حفظ جدول جديد قبل حفظ الجداول التي تسبقه جيداً و بدون أي خطأ.
+                <br>
+                <span class="pp">③</span> يمكنك الانتقال لاختبار جداول القسمة للأرقام التي تعلمتها في جداول الضرب فقط و
+                بعد دراسة الشرح هنا عن
+                عملية القسمة لتفهمها جيداً،
+                و لتتعلم معاني عملية القسمة.
+                <br>
+                <span class="pp">④</span> بعد اتقان الجداول التي تعلمتها يمكنك الانتقال إلى تعلم الإختبارات العامة
+                وتختبر
+                نفسك فيها.
+                <br>
+                <span class="pp">⑤</span> يوجد في الإختبارات مؤقت زمني يمكنك التحكم بسرعته على يسار الشاشة، لا تنتقل
+                إلى
+                سرعة أكبر حتى تتقن
+                السرعة التي تسبقها.
+                <br>
+                السرعة المثالية هي الثانية أما الثالثة فهي للتحدي وليس من الضروري للطالب أن يتمرن عليها.
+            </p>
+            <p id="multipication_p" class="title_p">شرح عملية الضرب</p>
+            <p id="multipication_p1">
+                تعني عملية الضرب ( أو الجداء ) التكرار، أو: عدد مرات التكرار.<br>
+                فمثلاً: 2 × 4 تعني 4 مرتين أو 2 أربع مرات، اختر أيهما أسهل.<br>
+                وبالتالي: 4 × 2 = 4 + 4.<br>
+                أو: 4 × 2 = 2 + 2 + 2 + 2.<br>
+                و في الحالتين الجواب هو 8.
+                قد تكون إحداهما أسهل من الأخرى، فمثلاً: <br>
+                10 × 2 = 20 <br>
+                10 + 10 = 20 <br>
+                أسهل من: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 20. <br>
+                <br>
+                <span class="note">ملاحظة 1: </span><br>
+                عملية الضرب هي عملية تبديلية، أي أن:<br>
+                3 × 5 = 5 × 3 <br>
+                4 × 6 = 6 × 4 <br>
+                2 × 8 = 8 × 2 <br><br>
+                <span class="note">ملاحظة 2: </span><br>
+                يجب على الطالب أن يحفظ جدول واحد فقط في كل مرة و لا ينتقل إلى حفظ جدول آخر حتى يحفظ الذي قبله بشكل ممتاز
+                .<br><br>
+                <span class="note">ملاحظة 3: </span><br>
+                بعد حفظ الجداول من واحد إلى خمسة، تعلم طريقة الحساب بالأصابع للأرقام الأكبرمن خمسة، هذه القاعدة مشروحة
+                بعد شرح جدول رقم خمسة.
+
+                <br><br>
+                <span id="number1">֎ - جدول رقم صفر:</span><br>
+                ناتج ضرب أي رقم ب صفر هو دوماً صفر، لأنها تعني أن الرقم لن يوجد و لا مرة واحدة:
+                <br>
+                1 × 0 = 0 <br>
+                2 × 0 = 0 <br>
+                3 × 0 = 0 <br>
+                4 × 0 = 0 <br>
+                5 × 0 = 0 <br>
+                6 × 0 = 0 <br>
+                7 × 0 = 0 <br>
+                8 × 0 = 0 <br>
+                9 × 0 = 0 <br>
+                10 × 0 = 0 <br>
+                <br>
+                <span id="number1_1">֎ - جدول رقم واحد:</span><br>
+                نتيجة ضرب أي رقم ب واحد هي دوماً الرقم نفسه الذي تم ضربه ب واحد، لأنه يعني أن الرقم لن يتكرر إلا مرة
+                واحدة فسوف يبقى نفسه:
+                <br>
+                1 × 1 = 1 <span class="space">..........</span> أي واحد مرة واحدة<br>
+                1 × 2 = 2 <span class="space">..........</span>أي اثنان مرة واحدة أو واحد مرتين<br>
+                1 × 3 = 3 <span class="space">..........</span>أي ثلاثة مرة واحدة أو واحد 3 مرات<br>
+                1 × 4 = 4 <span class="space">..........</span>أي أربعة مرة واحدة أو واحد 4 مرات<br>
+                1 × 5 = 5 <span class="space">..........</span>أي خمسة مرة واحدة أو واحد 5 مرات<br>
+                1 × 6 = 6 <span class="space">..........</span>أي ست مرة واحدة أو واحد 6 مرات<br>
+                1 × 7 = 7 <span class="space">..........</span>أي سبعة مرة واحدة أو واحد 7 مرات<br>
+                1 × 8 = 8 <span class="space">..........</span>أي ثمانية مرة واحدة أو واحد 8 مرات<br>
+                1 × 9 = 9 <span class="space">..........</span>أي تسعة مرة واحدة أو واحد 9 مرات<br>
+                1 × 10 = 10 <span class="space">......</span>أي عشرة مرة واحدة أو واحد 10 مرات<br>
+                <br>
+                <span class="number2">֎ - جدول رقم اثنان:</span><br>
+                أي رقم يتم ضربه ب 2 يعني أنه سوف يتكرر مرتين:
+                <br>
+                2 × 1 = 2 <span class="space">..........</span> أي اثنان مرة واحدة<br>
+                2 × 2 = 4 <span class="space">..........</span> أي اثنان مرتين<br>
+                2 × 3 = 6 <span class="space">..........</span> أي اثنان 3 مرات أو 3 مرتين<br>
+                2 × 4 = 8 <span class="space">..........</span> أي اثنان 4 مرات أو أربع مرتين<br>
+                2 × 5 = 10 <span class="space">........</span> أي اثنان 5 مرات أو خمسة مرتين<br>
+                2 × 6 = 12 <span class="space">........</span> أي اثنان 6 مرات أو ست مريتن<br>
+                2 × 7 = 14 <span class="space">........</span> أي اثنان 7 مرات أو سبعة مرتين<br>
+                2 × 8 = 16 <span class="space">........</span> أي اثنان 8 مرات أو ثمانية مرتين<br>
+                2 × 9 = 18 <span class="space">........</span> أي اثنان 9 مرات أو تسعة مرتين<br>
+                2 × 10 = 10 <span class="space">......</span> أي اثنان 10 مرات أو عشرة مرتين<br>
+                <br>وهكذا كل جداول الضرب بنفس الطريقة هناك خياران قد نذكر واحد منهما والآخر لا نذكره.
+                <br>
+                <br>
+                يفضل أن يعرف الطالب العد اثنين اثنين: 0، 2، 4، 6، 8، 10، 12 وهي الأعداد الزوجية.<br>
+                كذلك العد خمسة خمسة: <br>
+                0 - 5 - 10 - 15 - 20 - 25 - 30 - 35 - 40 - 45 - 50 - 55 - 60 - 65 - 70 - 75 - 80 - 85 - 90 - 95 - 100
+                <br><br>
+                <span class="number2">֎ - جدول رقم ثلاثة:</span> <br>
+                أي رقم يتم ضربه ب 3 يعني أنه سوف يتكرر 3 مرات:
+                <br>
+                3 × 1 = 3 <span class="space">............</span>أي واحد 3 مرات أو ثلاثة مرة واحدة <br>
+                3 × 2 = 6 <span class="space">...........</span> أي اثنان 3 مرات أو ثلاثة مرتين<br>
+                3 × 3 = 9 <span class="space">............</span>أي ثلاثة 3 مرات <br>
+                3 × 4 = 12 <span class="space">..........</span>أي أربعة 3 مرات أو ثلاثة 4 مرات<br>
+                3 × 5 = 15 <span class="space">..........</span>أي خمسة 3 مرات أو ثلاثة 5 مرات<br>
+                3 × 6 = 18 <span class="space">..........</span>أي ست 3 مرات أو ثلاثة 6 مرات<br>
+                3 × 7 = 21 <span class="space">..........</span>أي سبعة 3 مرات أو ثلاثة 7 مرات<br>
+                3 × 8 = 24 <span class="space">..........</span>أي ثمانية 3 مرات أو ثلاثة 8 مرات<br>
+                3 × 9 = 27 <span class="space">..........</span>أي تسعة 3 مرات أو ثلاثة 9 مرات<br>
+                3 × 10 = 30 <span class="space">........</span>أي عشرة 3 مرات أو ثلاثة 10 مرات<br>
+                <br>
+                <span class="number2">֎ - جدول رقم أربعة:</span> <br>
+                أي رقم يتم ضربه ب 4 يعني أنه سوف يتكرر 4 مرات:
+                <br>
+                4 × 1 = 4 <span class="space">............</span>أي واحد 4 مرات أوأربع مرة واحدة<br>
+                4 × 2 = 8 <span class="space">............</span>أي اثنان 4 مرات أوأربع مرتين<br>
+                4 × 3 = 12 <span class="space">..........</span>أي ثلاثة 4 مرات أوأربع 3 مرات<br>
+                4 × 4 = 16 <span class="space">..........</span>أي أربعة 4 مرات<br>
+                4 × 5 = 20 <span class="space">..........</span>أي خمسة 4 مرات أوأربع 5 مرات<br>
+                4 × 6 = 24 <span class="space">..........</span>أي ست 4 مرات أوأربع 6 مرات<br>
+                4 × 7 = 28 <span class="space">..........</span>أي سبعة 4 مرات أوأربع 7 مرات<br>
+                4 × 8 = 32 <span class="space">..........</span>أي ثمانية 4 مرات أوأربع 8 مرات<br>
+                4 × 9 = 36 <span class="space">..........</span>أي تسعة 4 مرات أوأربع 9 مرات<br>
+                4 × 10 = 40 <span class="space">........</span>أي عشرة 4 مرات أو أربع 10 مرات<br>
+                <br>
+                <span id="number5">֎ - جدول رقم خمسة:</span> <br>
+                أي رقم يتم ضربه ب 5 يعني أنه سوف يتكرر 5 مرات:
+                <br>
+                5 × 1 = 5 <span class="space">............</span>أي واحد 5 مرات أو خمسة مرة واحدة<br>
+                5 × 2 = 10 <span class="space">..........</span>أي اثنان 5 مرات أو خمسة مرتين<br>
+                5 × 3 = 15 <span class="space">..........</span>أي ثلاثة 5 مرات أو خمسة 3 مرات<br>
+                5 × 4 = 20 <span class="space">..........</span>أي أربعة 5 مرات أو خمسة 4 مرات<br>
+                5 × 5 = 25 <span class="space">..........</span>أي خمسة 5 مرات<br>
+                5 × 6 = 30 <span class="space">..........</span>أي ست 5 مرات أو خمسة 6 مرات<br>
+                5 × 7 = 35 <span class="space">..........</span>أي سبعة 5 مرات أو خمسة 7 مرات<br>
+                5 × 8 = 40 <span class="space">..........</span>أي ثمانية 5 مرات أو خمسة 8 مرات<br>
+                5 × 9 = 45 <span class="space">..........</span>أي تسعة 5 مرات أو خمسة 9 مرات<br>
+                5 × 10 = 50 <span class="space">........</span>أي عشرة 5 مرات أو خمسة 10 مرات<br>
+                <br>
+                <span id="rule">طريقة الحساب بالأصابع للأرقام الأكبر من خمسة:</span> <br><br>
+                و هي طريقة سهلة على الطالب يمكنه أن يستخدمها بسهولة بعد تعلمها ريثما يحفظ كل جداول الضرب.
+                <br><br>
+                <span> المثال الأول:</span> 8 × 9 <br>
+                نضع بإحدى اليدين عدد أصابع ناتج طرح: 10 - 9 = 1<br>
+                و في اليد الأخرى ناتج طرح 10 - 8 = 2<br>
+                وبالتالي سنفتح اصبع واحدة في اليد الأولى و اصبعين في اليد الأخرى. <br>
+                <img class="example" alt="example" src="../images/1p.JPG"><img class="example" alt="example"
+                    src="../images/2pp.jpg"> <br>
+                ثم نضرب 1 × 2 <br>
+                1: تمثل عدد الأصابع الممدودة في اليد الأولى <br>
+                2: تمثل عدد الأصابع الممدودة في اليد الثانية <br>
+                2 × 1 = 2 <br>
+                ثم نجمع الأصابع غير الممدودة في اليدين معاً ولكن عشرة عشرة، أي كل اصبع يمثل عشرة، وبما أنها 7 أصابع
+                فالناتج هو: 70.
+                فتكون نتيجة الضرب هي: 70 + 2 = 72
+                <br> <br>
+                <span> المثال الثاني:</span> 8 × 6 <br>
+                10 - 8 = 2 <br>
+                10 - 6 = 4 <br>
+                في اليد الأولى: اصبعان <br>
+                وفي اليد الثانية 4 أصابع <br>
+                <img class="example" alt="example" src="../images/2pp.jpg"><img class="example" alt="example"
+                    src="../images/4p.JPG"> <br>
+                4 × 2 = 8 <br>
+                عدد الأصابع غير الممدودة 4 كل منها عشرة مجموعها: 40 <br>
+                الناتج النهائي: 40 + 8 = 48 <br>
+                هناك حالتان ننصح بحفظهما بدلاً من حسابهما بالأصابع لأنه قد يكون حسابهما على الطالب أصعب من حفظهما، و
+                هما: <br>
+                6 × 6 = 36 <br>
+                6 × 7 = 42 <br>
+                <br>
+                <span> المثال الثالث:</span> طريقة الحساب بالأصابع ل 6 × 6: <br>
+                10 - 6 = 4 <br>
+                10 - 6 = 4 <br>
+                ضرب الأصابع الممدودة: 4 × 4 = 16 <br>
+                عدد الأصابع غير الممدودة: 2 أي 20 <br>
+                <img class="example" alt="example" src="../images/4p.JPG"><img class="example" alt="example"
+                    src="../images/4p.JPG"> <br>
+                20 + 16 = 36 <br>
+                <br>
+                <span> المثال الرابع:</span> طريقة الحساب بالأصابع ل 7 × 6: <br>
+                10- 6 = 4 <br>
+                10 - 7 = 3 <br>
+                ضرب الأصابع الممدودة: 4 × 3 = 12 <br>
+                عدد الأصابع غير الممدودة: 3 أي 30 <br>
+                <img class="example" alt="example" src="../images/4p.JPG"><img class="example" alt="example"
+                    src="../images/3p.JPG"> <br>
+
+                30 + 12 = 42 <br>
+                <br>
+                <span id="number6">֎ - جدول رقم ست:</span> <br>
+                أي رقم يتم ضربه ب 6 يعني أنه سوف يتكرر 6 مرات:
+                <br>
+                6 × 1 = 1 <span class="space">..........</span> أي 6 مرة واحدة أو 1 ست مرات <br>
+                6 × 2 = 2 <span class="space">..........</span> أي 6 مرتين أو 2 ست مرات <br>
+                6 × 3 = 3 <span class="space">..........</span> أي 6 ثلاث مرات أو 3 ست مرات <br>
+                6 × 4 = 4 <span class="space">..........</span> أي 6 أربع مرات أو 4 ست مرات <br>
+                6 × 5 = 5 <span class="space">..........</span> أي 6 خمس مرات أو 5 ست مرات <br>
+                6 × 6 = 6 <span class="space">..........</span> أي 6 ست مرات<br>
+                6 × 7 = 7 <span class="space">..........</span> أي 6 سبع مرات أو 7 ست مرات <br>
+                6 × 8 = 8 <span class="space">..........</span> أي 6 ثمان مرات أو 8 ست مرات <br>
+                6 × 9 = 9 <span class="space">..........</span> أي 6 تسع مرات أو 9 ست مرات <br>
+                6 × 10 = 10 <span class="space">......</span> أي 6 عشر مرات أو 10 ست مرات<br><br>
+                <span class="number2">֎ - جدول رقم سبعة:</span><br>
+                أي رقم يتم ضربه ب 7 يعني أنه سوف يتكرر 7 مرات:
+                <br>
+                7 × 1 = 7 <span class="space">............</span> أي واحد 7 مرات أو سبعة مرة واحدة<br>
+                7 × 2 = 14 <span class="space">..........</span> أي اثنان 7 مرات أو سبعة مرتين<br>
+                7 × 3 = 21 <span class="space">..........</span> أي ثلاثة 7 مرات أو سبعة 3 مرات<br>
+                7 × 4 = 28 <span class="space">..........</span> أي أربعة 7 مرات أو سبعة 4 مرات<br>
+                7 × 5 = 35 <span class="space">..........</span> أي خمسة 7 مرات أو سبعة 5 مرات<br>
+                7 × 6 = 42 <span class="space">..........</span> أي ست 7 مرات أو سبعة 6 مرات<br>
+                7 × 7 = 49 <span class="space">..........</span> أي سبعة 7 مرات <br>
+                7 × 8 = 56 <span class="space">..........</span> أي ثمانية 7 مرات أو سبعة 8 مرات<br>
+                7 × 9 = 63 <span class="space">..........</span> أي تسعة 7 مرات أو سبعة 9 مرات<br>
+                7 × 10 = 70 <span class="space">........</span> أي عشرة 7 مرات أو سبعة 10 مرات<br>
+                <br>
+                <span class="number2">֎ - جدول رقم ثمانية:</span><br>
+                أي رقم يتم ضربه ب 8 يعني أنه سوف يتكرر 8 مرات:
+                <br>
+                8 × 1 = 8 <span class="space">............</span> أي واحد 8 مرات أو ثمانية مرة واحدة<br>
+                8 × 2 = 16 <span class="space">..........</span> أي اثنان 8 مرات أو ثمانية مرتين<br>
+                8 × 3 = 24 <span class="space">..........</span> أي ثلاثة 8 مرات أو ثمانية 3 مرات<br>
+                8 × 4 = 32 <span class="space">..........</span> أي أربعة 8 مرات أو ثمانية 4 مرات<br>
+                8 × 5 = 40 <span class="space">..........</span> أي خمسة 8 مرات أو ثمانية 5 مرات<br>
+                8 × 6 = 48 <span class="space">..........</span> أي ست 8 مرات أو ثمانية 6 مرات<br>
+                8 × 7 = 56 <span class="space">..........</span> أي سبعة 8 مرات أو ثمانية 7 مرات<br>
+                8 × 8 = 64 <span class="space">..........</span> أي ثمانية 8 مرات<br>
+                8 × 9 = 72 <span class="space">..........</span> أي تسعة 8 مرات أو ثمانية 9 مرات<br>
+                8 × 10 = 80 <span class="space">........</span> أي عشرة 8 مرات أو ثمانية 10 مرات<br>
+                <br>
+                <span class="number2">֎ - جدول رقم تسعة:</span><br>
+                أي رقم يتم ضربه ب 9 يعني أنه سوف يتكرر 9 مرات:
+                <br>
+                9 × 1 = 9 <span class="space">............</span> أي واحد 9 مرات أو تسعة مرة واحدة<br>
+                9 × 2 = 18 <span class="space">..........</span> أي اثنان 9 مرات أو تسعة مرتين<br>
+                9 × 3 = 27 <span class="space">..........</span> أي ثلاثة 9 مرات أو تسعة 3 مرات<br>
+                9 × 4 = 36 <span class="space">..........</span> أي أربعة 9 مرات أو تسعة 4 مرات<br>
+                9 × 5 = 45 <span class="space">..........</span> أي خمسة 9 مرات أو تسعة 5 مرات<br>
+                9 × 6 = 54 <span class="space">..........</span> أي ست 9 مرات أو تسعة 6 مرات<br>
+                9 × 7 = 63 <span class="space">..........</span> أي سبعة 9 مرات أو تسعة 7 مرات<br>
+                9 × 8 = 72 <span class="space">..........</span> أي ثمانية 9 مرات أو تسعة 8 مرات<br>
+                9 × 9 = 81 <span class="space">..........</span> أي تسعة 9 مرات أو تسعة 9 مرات<br>
+                9 × 10 = 90 <span class="space">........</span> أي عشرة 9 مرات أو تسعة 10 مرات<br>
+                <br>
+                <span class="number2">֎ - جدول رقم عشرة:</span> <br>
+                أي رقم يتم ضربه ب 10 يعني أنه سوف يتكرر 10 مرات:
+                <br>
+                10 × 1 = 10 <span class="space">..........</span> أي واحد 10 مرات أو عشرة مرة واحدة<br>
+                10 × 2 = 20 <span class="space">..........</span> أي اثنان 10 مرات أو عشرة مرتين<br>
+                10 × 3 = 30 <span class="space">..........</span> أي ثلاثة 10 مرات أو عشرة 3 مرات<br>
+                10 × 4 = 40 <span class="space">..........</span> أي أربعة 10 مرات أو عشرة 4 مرات<br>
+                10 × 5 = 50 <span class="space">..........</span> أي خمسة 10 مرات أو عشرة 5 مرات<br>
+                10 × 6 = 60 <span class="space">..........</span> أي ست 10 مرات أو عشرة 6 مرات<br>
+                10 × 7 = 70 <span class="space">..........</span> أي سبعة 10 مرات أو عشرة 7 مرات<br>
+                10 × 8 = 80 <span class="space">..........</span> أي ثمانية 10 مرات أو عشرة 8 مرات<br>
+                10 × 9 = 90 <span class="space">..........</span> أي تسعة 10 مرات أو عشرة 9 مرات<br>
+                10 × 10 = 100 <span class="space">......</span> أي عشرة 10 مرات أو عشرة 10 مرات<br>
+                <br>
+                <span class="number2">֎ - جدول رقم أحد عشر:</span> <br>
+                أي رقم يتم ضربه ب 11 يعني أنه سوف يتكرر 11 مرات:
+                <br>
+                11 × 1 = 11 <span class="space">..........</span> أي واحد 11 مرة أو 11 مرة واحدة<br>
+                11 × 2 = 22 <span class="space">..........</span> أي اثنان 11 مرة أو أحد عشر مرتين<br>
+                11 × 3 = 33 <span class="space">..........</span> أي ثلاثة 11 مرة أو أحد عشر 3 مرات<br>
+                11 × 4 = 44 <span class="space">..........</span> أي أربعة 11 مرة أو أحد عشر 4 مرات<br>
+                11 × 5 = 55 <span class="space">..........</span> أي خمسة 11 مرة أو أحد عشر 5 مرات<br>
+                11 × 6 = 66 <span class="space">..........</span> أي ست 11 مرة أو أحد عشر 6 مرات<br>
+                11 × 7 = 77 <span class="space">..........</span> أي سبعة 11 مرة أو أحد عشر 7 مرات<br>
+                11 × 8 = 88 <span class="space">..........</span> أي ثمانية 11 مرة أو أحد عشر 8 مرات<br>
+                11 × 9 = 99 <span class="space">..........</span> أي تسعة 11 مرة أو أحد عشر 9 مرات<br>
+                11 × 10 = 110 <span class="space">......</span> أي عشرة 11 مرة أو أحد عشر 10 مرات<br>
+                11 × 11 = 121 <span class="space">......</span> أي أحد عشر 11 مرة <br>
+                <br>
+                <span class="number2">֎ - جدول رقم اثنا عشر:</span> <br>
+                أي رقم يتم ضربه ب 12 يعني أنه سوف يتكرر 12 مرات:
+                <br>
+                12 × 1 = 12 <span class="space">..........</span> أي واحد 12 مرة أو 12 مرة واحدة<br>
+                12 × 2 = 24 <span class="space">..........</span> أي اثنان 12 مرة أو اثنا عشر مرتين<br>
+                12 × 3 = 36 <span class="space">..........</span> أي ثلاثة 12 مرة أو اثنا عشر 3 مرات<br>
+                12 × 4 = 48 <span class="space">..........</span> أي أربعة 12 مرة أو اثنا عشر 4 مرات<br>
+                12 × 5 = 60 <span class="space">..........</span> أي خمسة 12 مرة أو اثنا عشر 5 مرات<br>
+                12 × 6 = 72 <span class="space">..........</span> أي ست 12 مرة أو اثنا عشر 6 مرات<br>
+                12 × 7 = 84 <span class="space">..........</span> أي سبعة 12 مرة أو اثنا عشر 7 مرات<br>
+                12 × 8 = 96 <span class="space">..........</span> أي ثمانية 12 مرة أو اثنا عشر 8 مرات<br>
+                12 × 9 = 108 <span class="space">........</span> أي تسعة 12 مرة أو اثنا عشر 9 مرات<br>
+                12 × 10 = 120 <span class="space">......</span> أي عشرة 12 مرة أو اثنا عشر 10 مرات<br>
+                12 × 11 = 132 <span class="space">......</span> أي أحد عشر 12 مرة أو اثنا عشر 11 مرات<br>
+                12 × 12 = 144 <span class="space">......</span> أي اثنا عشر 12 مرة <br>
+            <p id="division_p" class="title_p">شرح عملية القسمة </p>
+            <p id="division_p1" class="">
+                <span class="margin"> لعملية القسمة ثلاث طرق: التوزيع، و كم، و عكس الضرب. </span><br>
+                نستخدم إحدى الطريقتين الأولى أو الثانية أيهما أسهل، و ذلك في بداية تعلم عملية القسمة لنسهل على الطالب
+                فهم
+                عملية القسمة جيداً. <br>
+                <span class="pp">① التوزيع: </span><br>
+                <span class="note">مثال: </span>
+                8 ÷ 2 = ؟ <br>
+                أي ثمانية أشياء ولتكن أقلاماً مثلاً، نريد توزيعها على شخصين اثنين مثلاً بالتساوي، كم عدد الأقلام التي
+                نعطيها لكل
+                واحد منهما ؟ <br>
+                الجواب 4، لأن 4 + 4 = 8. <br>
+                <span class="pp">② الكم: </span><br>
+                <span class="note">مثال: </span>
+                6 ÷ 3 = ؟ <br>
+                كم ثلاثة موجودة في الرقم ستة ؟ <br>
+                الجواب: 2. <br>
+                <span class="note">ملاحظة: </span> قد تكون إحدى الطريقتين أسهل من الأخرى حسب المثال: <br>
+                فمثلاً: 20 ÷ 2 <br>
+                طريقة التوزيع هنا أسهل: 20 تفاحة نوزعها على شخصين بالتساوي فكم تفاحة يأخذ كل منهما ؟ الجواب 10 <br>
+                بينما: 20 ÷ 10 <br>
+                طريقة الكم هنا أسهل: كم عشرة موجودة في الرقم عشرين ؟
+                الجواب: 2 <br>
+                <span class="pp">③ عكس الضرب:</span><br>
+                هنا يجب على الطالب أن يكون قد حفظ جداول الضرب للأرقام في المسائل. <br>
+                و هذه هي الطريقة التي سيعتمد عليها الطالب بعد فهم معنى القسمة بالطريقتين السابقتين، لأنه لا يمكن
+                استخدامهما إلا للحالات السهلة. <br>
+                <span class="note">مثال: </span> 30 ÷ 6 = ؟ <br>
+                ما هو العدد الذي إذا ضربناه بالمقسوم عليه (أي 6 ) كان الناتج هو الرقم الذي نقسمه (أي 30 ) ؟ <br>
+                هنا يجب على الطالب أن يتذكر من جداول الضرب:<br>
+                5 × 6 = 30 <br>
+                قد يرى الطالب في البداية صعوبة في تذكر ذلك لأنها عملية بحث تجري في فكره الآن عن رقمين ناتج ضربهما 30 و
+                أحدهما هو 6. <br>
+                و في حال لم يتذكر مباشرة يمكنه أن يراجع في ذهنه جدول رقم 6 في مثالنا هذا: <br>
+                فيقول: <br>
+                6 × 1 = 6 <span class="space">.........</span>ليس هو الناتج الذي نبحث عنه<br>
+                6 × 2 = 12 <span class="space">.......</span>ليس هو الناتج الذي نبحث عنه<br>
+                6 × 3 = 18 <span class="space">.......</span>ليس هو الناتج الذي نبحث عنه<br>
+                6 × 4 = 24 <span class="space">.......</span>ليس هو الناتج الذي نبحث عنه<br>
+                6 × 5 = 30 <span class="space">.......</span>و هو الناتج الذي نبحث عنه، فالجواب هو 5، أي أن: <br>
+                30 ÷ 6 = 5 <br><br>
+                <span class="note">ملاحظة 1: </span> عملية القسمة ليست تبديلية.<br>
+                أي أن: 9 ÷ 3 لا يساوي 3 ÷ 9. <br><br>
+                <span class="note">ملاحظة 2: </span> <br>
+                كل عملية ضرب لرقمين ينتج عنها عمليتي قسمة <br>
+                وهما: ناتج عملية الضرب إذا قسمناه على أحد الرقمين كان الناتج هو الرقم الآخر
+                ، فمثلاً: <br>
+                6 × 5 = 30 <br>
+                ينتج عنها:<br>
+                30 ÷ 6 = 5<br>
+                30 ÷ 5 = 6<br>
+                . <br>
+            </p>
+            <p id="general_tests_p" class="title_p">شرح الإختبارات العامة </p>
+            <p id="general_tests_p1" class="">
+                اخترت نوع واحد من المسائل الصعبة على الطلاب في هذه المرحلة، وهي: <br>
+                رقمان مجموعهما معلوم و ناتج ضربهما معلوم، فما هما ؟ <br>
+                وحتى يعتاد الطالب على هذا النوع من المسائل فإنه يمكن للطالب أن يعرف أحد الرقمين وهو الجدول الذي اختاره.
+                <br>
+                فإذا اختار أكثر من جدول فإن أحد الرقمين هو أحد الجداول التي اختارها. <br><br>
+                <span class="note">مثال: </span><br>
+                رقمان ناتج ضربهما: 24، و مجموعهما: 10، فما هما ؟ <br>
+                يبحث الطالب في ذهنه في جداول الضرب فيتذكر أن: <br>
+                8 × 3 = 24 <br>
+                6 × 4 = 24 <br>
+                مجموع الرقمين في الحالة الأولى 11 مخالف للمطلوب فليس هما الجواب. <br>
+                و مجموع الرقمين في الحالة الثانية 10 وهو المطلوب. <br>
+                إذاً فالرقمان هما: 6، 4 <br><br>
+                <span class="note">ملاحظة: </span><br>
+                هذا النوع من المسائل حله في هذه المرحلة الابتدائية هو التذكر و التجريب، أي أنه يجرب في كل مرة رقمين و
+                يرى ناتج ضربهما، ثم إذا كان هو المطلوب يجرب ما هو ناتج مجموعهما، فإن لم ينطبق مع المطلوب بحث عن
+                غيرهما.
+
+
+            </p>
+            <p id="end_p" class="title_p"> الخاتمة </p>
+            <p id="end_p1" class="">
+                نرجو أن ينال الموقع رضاكم و يستفيد الطلاب في التمرن على جداول الضرب و القسمة و فهمها و حفظها بشكل أفضل
+                و أسرع. <br>
+                يسرنا تواصلكم و إبداء آرائكم و ملاحظاتكم. <br>
+                تم تصميم الموقع بجهود فردية تماماً لذلك فأي تطويرات أو توسيع للموقع سيحتاج إلى الوقت و الدعم.
+                <br><br>
+                <span class="note">للتواصل: </span><br>
+            <p class="cont2">
+                إيميل: engineer.shadirahhal@gmail.com <br><br>
+                للتبرع:<br>
+                IBAN: AE620500000000014580480
+                Account No.: 14580480<br><br>
+                مطور و مصمم الموقع: شادي رحال
+                <br>
+            </p>
+            <pre>
+
+
+            </pre>
+        </div>
+        <div class="side_container">
+            <div id="ar_side_home">
+                <a id="ar_arabic_choose_home" class="animation" href="#home_arabic.html">
+                    <span id="ar_arabic_word" class="black_arabic"> أرقام عربية</span>
+                    <pre class="check_sound_home">✓</pre>
+                </a>
+                <br>
+            </div>
+            <button id="up2">↑</button>
+            <div class="container2">
+                <ol class="subjects">
+                    <li id="ar_for_who_p_a" class="subject">» لمن هذا الموقع</li>
+                    <li id="ar_how_p_a" class="subject">» كيف أستخدم الموقع </li>
+                    <li id="ar_multipication_p_a" class="subject">» شرح عملية الضرب </li>
+                    <li id="ar_division_p_a" class="subject">» شرح عملية القسمة</li>
+                    <li id="ar_general_tests_p_a" class="subject">» شرح الإختبارات العامة</li>
+                    <li id="ar_end_p_a" class="subject"> » الخاتمة</li>
+
+                </ol>
+            </div>
+            <br>
+            <p id="ar_for_who_p" class="title_p">لمن هذا الموقع</p>
+
+            <p id="ar_for_who_p1">
+
+                صمم هذا الموقع لتعليم طلاب المرحلة الابتدائية للصف الثاني و الثالث والرابع، جداول الضرب والقسمة و
+                غيرها،
+                و لمساعدة الطالب على فهم و حفظ جداول الضرب.
+                <br>
+                يمكن للأهل الاطلاع على الموقع جيداً لمعرفة جميع الأدوات في الموقع والاستفادة منه بشكل كامل.
+            </p>
+            <p id="ar_how_p" class="title_p">كيف أستخدم الموقع</p>
+            <p id="ar_how_p1">
+
+                <span class="pp">①</span> اطلع على أدوات الموقع أولاً و اقرأ المعلومات فيه و كذلك في قسم ' تعليمات '،
+                ثم ادرس المعلومات في هذا القسم لتتعلم معنى عملية الضرب قبل البدء بالحفظ،
+                ثم يمكنك البدء باختبار أول جدول أو جدولين: الواحد والاثنين من جداول الضرب.
+                <br>
+                <span class="pp">②</span> لا تنتقل إلى حفظ جدول جديد قبل حفظ الجداول التي تسبقه جيداً و بدون أي خطأ.
+                <br>
+                <span class="pp">③</span> يمكنك الانتقال لاختبار جداول القسمة للأرقام التي تعلمتها في جداول الضرب فقط و
+                بعد دراسة الشرح هنا عن
+                عملية القسمة لتفهمها جيداً،
+                و لتتعلم معاني عملية القسمة.
+                <br>
+                <span class="pp">④</span> بعد اتقان الجداول التي تعلمتها يمكنك الانتقال إلى تعلم الإختبارات العامة
+                وتختبر
+                نفسك فيها.
+                <br>
+                <span class="pp">⑤</span> يوجد في الإختبارات مؤقت زمني يمكنك التحكم بسرعته على يسار الشاشة، لا تنتقل
+                إلى
+                سرعة أكبر حتى تتقن
+                السرعة التي تسبقها.
+                <br>
+                السرعة المثالية هي الثانية أما الثالثة فهي للتحدي وليس من الضروري للطالب أن يتمرن عليها.
+            </p>
+            <p id="ar_multipication_p" class="title_p">شرح عملية الضرب</p>
+            <p id="ar_multipication_p1">
+                تعني عملية الضرب ( أو الجداء ) التكرار، أو: عدد مرات التكرار.<br>
+                فمثلاً: ٢ × ٤ تعني ٤ مرتين أو ٢ أربع مرات، اختر أيهما أسهل.<br>
+                وبالتالي: ٤ × ٢ = ٤ + ٤.<br>
+                أو: ٤ × ٢ = ٢ + ٢ + ٢ + ٢.<br>
+                و في الحالتين الجواب هو ٨.
+                قد تكون إحداهما أسهل من الأخرى، فمثلاً: <br>
+                ١٠ × ٢ = ٢٠ <br>
+                ١٠ + ١٠ = ٢٠ <br>
+                أسهل من: ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ + ٢ = ٢٠. <br>
+                <br>
+                <span class="note">ملاحظة ١: </span><br>
+                عملية الضرب هي عملية تبديلية، أي أن:<br>
+                ٣ × ٥ = ٥ × ٣ <br>
+                ٤ × ٦ = ٦ × ٤ <br>
+                ٢ × ٨ = ٨ × ٢ <br><br>
+                <span class="note">ملاحظة ٢: </span><br>
+                يجب على الطالب أن يحفظ جدول واحد فقط في كل مرة و لا ينتقل إلى حفظ جدول آخر حتى يحفظ الذي قبله بشكل ممتاز
+                .<br><br>
+                <span class="note">ملاحظة ٣: </span><br>
+                بعد حفظ الجداول من واحد إلى خمسة، تعلم طريقة الحساب بالأصابع للأرقام الأكبرمن خمسة، هذه القاعدة مشروحة
+                بعد شرح جدول رقم خمسة.
+
+                <br><br>
+                <span class="ar_number">֎ - جدول رقم صفر:</span><br>
+                ناتج ضرب أي رقم ب صفر هو دوماً صفر، لأنها تعني أن الرقم لن يوجد و لا مرة واحدة:
+                <br>
+                ١ × ٠ = ٠ <br>
+                ٢ × ٠ = ٠ <br>
+                ٣ × ٠ = ٠ <br>
+                ٤ × ٠ = ٠ <br>
+                ٥ × ٠ = ٠ <br>
+                ٦ × ٠ = ٠ <br>
+                ٧ × ٠ = ٠ <br>
+                ٨ × ٠ = ٠ <br>
+                ٩ × ٠ = ٠ <br>
+                ١٠ × ٠ = ٠ <br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم واحد:</span><br>
+                نتيجة ضرب أي رقم ب واحد هي دوماً الرقم نفسه الذي تم ضربه ب واحد، لأنه يعني أن الرقم لن يتكرر إلا مرة
+                واحدة فسوف يبقى نفسه:
+                <br>
+                ١ × ١ = ١ <span class="space">..........</span> أي واحد مرة واحدة<br>
+                ١ × ٢ = ٢ <span class="space">..........</span>أي اثنان مرة واحدة أو واحد مرتين<br>
+                ١ × ٣ = ٣ <span class="space">..........</span>أي ثلاثة مرة واحدة أو واحد ٣ مرات<br>
+                ١ × ٤ = ٤ <span class="space">..........</span>أي أربعة مرة واحدة أو واحد ٤ مرات<br>
+                ١ × ٥ = ٥ <span class="space">..........</span>أي خمسة مرة واحدة أو واحد ٥ مرات<br>
+                ١ × ٦ = ٦ <span class="space">..........</span>أي ست مرة واحدة أو واحد ٦ مرات<br>
+                ١ × ٧ = ٧ <span class="space">..........</span>أي سبعة مرة واحدة أو واحد ٧ مرات<br>
+                ١ × ٨ = ٨ <span class="space">..........</span>أي ثمانية مرة واحدة أو واحد ٨ مرات<br>
+                ١ × ٩ = ٩ <span class="space">..........</span>أي تسعة مرة واحدة أو واحد ٩ مرات<br>
+                ١ × ١٠ = ١٠ <span class="space">......</span>أي عشرة مرة واحدة أو واحد ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم اثنان:</span><br>
+                أي رقم يتم ضربه ب ٢ يعني أنه سوف يتكرر مرتين:
+                <br>
+                ٢ × ١ = ٢ <span class="space">..........</span> أي اثنان مرة واحدة<br>
+                ٢ × ٢ = ٤ <span class="space">..........</span> أي اثنان مرتين<br>
+                ٢ × ٣ = ٦ <span class="space">..........</span> أي اثنان ٣ مرات أو ٣ مرتين<br>
+                ٢ × ٤ = ٨ <span class="space">..........</span> أي اثنان ٤ مرات أو أربع مرتين<br>
+                ٢ × ٥ = ١٠ <span class="space">........</span> أي اثنان ٥ مرات أو خمسة مرتين<br>
+                ٢ × ٦ = ١٢ <span class="space">........</span> أي اثنان ٦ مرات أو ست مريتن<br>
+                ٢ × ٧ = ١٤ <span class="space">........</span> أي اثنان ٧ مرات أو سبعة مرتين<br>
+                ٢ × ٨ = ١٦ <span class="space">........</span> أي اثنان ٨ مرات أو ثمانية مرتين<br>
+                ٢ × ٩ = ١٨ <span class="space">........</span> أي اثنان ٩ مرات أو تسعة مرتين<br>
+                ٢ × ١٠ = ١٠ <span class="space">......</span> أي اثنان ١٠ مرات أو عشرة مرتين<br>
+                <br>وهكذا كل جداول الضرب بنفس الطريقة هناك خياران قد نذكر واحد منهما والآخر لا نذكره.
+                <br>
+                <br>
+                يفضل أن يعرف الطالب العد اثنين اثنين: ٠، ٢، ٤، ٦، ٨، ١٠، ١٢ وهي الأعداد الزوجية.<br>
+                كذلك العد خمسة خمسة: <br>
+                ٠ - ٥ - ١٠ - ١٥ - ٢٠ - ٢٥ - ٣٠ - ٣٥ - ٤٠ - ٤٥ - ٥٠ - ٥٥ - ٦٠ - ٦٥ - ٧٠ - ٧٥ - ٨٠ - ٨٥ - ٩٠ - ٩٥ - ١٠٠
+                <br><br>
+                <span class="ar_number">֎ - جدول رقم ثلاثة:</span> <br>
+                أي رقم يتم ضربه ب ٣ يعني أنه سوف يتكرر ٣ مرات:
+                <br>
+                ٣ × ١ = ٣ <span class="space">............</span>أي واحد ٣ مرات أو ثلاثة مرة واحدة <br>
+                ٣ × ٢ = ٦ <span class="space">...........</span> أي اثنان ٣ مرات أو ثلاثة مرتين<br>
+                ٣ × ٣ = ٩ <span class="space">............</span>أي ثلاثة ٣ مرات <br>
+                ٣ × ٤ = ١٢ <span class="space">..........</span>أي أربعة ٣ مرات أو ثلاثة ٤ مرات<br>
+                ٣ × ٥ = ١٥ <span class="space">..........</span>أي خمسة ٣ مرات أو ثلاثة ٥ مرات<br>
+                ٣ × ٦ = ١٨ <span class="space">..........</span>أي ست ٣ مرات أو ثلاثة ٦ مرات<br>
+                ٣ × ٧ = ٢١ <span class="space">..........</span>أي سبعة ٣ مرات أو ثلاثة ٧ مرات<br>
+                ٣ × ٨ = ٢٤ <span class="space">..........</span>أي ثمانية ٣ مرات أو ثلاثة ٨ مرات<br>
+                ٣ × ٩ = ٢٧ <span class="space">..........</span>أي تسعة ٣ مرات أو ثلاثة ٩ مرات<br>
+                ٣ × ١٠ = ٣٠ <span class="space">........</span>أي عشرة ٣ مرات أو ثلاثة ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم أربعة:</span> <br>
+                أي رقم يتم ضربه ب ٤ يعني أنه سوف يتكرر ٤ مرات:
+                <br>
+                ٤ × ١ = ٤ <span class="space">............</span>أي واحد ٤ مرات أوأربع مرة واحدة<br>
+                ٤ × ٢ = ٨ <span class="space">............</span>أي اثنان ٤ مرات أوأربع مرتين<br>
+                ٤ × ٣ = ١٢ <span class="space">..........</span>أي ثلاثة ٤ مرات أوأربع ٣ مرات<br>
+                ٤ × ٤ = ١٦ <span class="space">..........</span>أي أربعة ٤ مرات<br>
+                ٤ × ٥ = ٢٠ <span class="space">..........</span>أي خمسة ٤ مرات أوأربع ٥ مرات<br>
+                ٤ × ٦ = ٢٤ <span class="space">..........</span>أي ست ٤ مرات أوأربع ٦ مرات<br>
+                ٤ × ٧ = ٢٨ <span class="space">..........</span>أي سبعة ٤ مرات أوأربع ٧ مرات<br>
+                ٤ × ٨ = ٣٢ <span class="space">..........</span>أي ثمانية ٤ مرات أوأربع ٨ مرات<br>
+                ٤ × ٩ = ٣٦ <span class="space">..........</span>أي تسعة ٤ مرات أوأربع ٩ مرات<br>
+                ٤ × ١٠ = ٤٠ <span class="space">........</span>أي عشرة ٤ مرات أو أربع ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم خمسة:</span> <br>
+                أي رقم يتم ضربه ب ٥ يعني أنه سوف يتكرر ٥ مرات:
+                <br>
+                ٥ × ١ = ٥ <span class="space">............</span>أي واحد ٥ مرات أو خمسة مرة واحدة<br>
+                ٥ × ٢ = ١٠ <span class="space">..........</span>أي اثنان ٥ مرات أو خمسة مرتين<br>
+                ٥ × ٣ = ١٥ <span class="space">..........</span>أي ثلاثة ٥ مرات أو خمسة ٣ مرات<br>
+                ٥ × ٤ = ٢٠ <span class="space">..........</span>أي أربعة ٥ مرات أو خمسة ٤ مرات<br>
+                ٥ × ٥ = ٢٥ <span class="space">..........</span>أي خمسة ٥ مرات<br>
+                ٥ × ٦ = ٣٠ <span class="space">..........</span>أي ست ٥ مرات أو خمسة ٦ مرات<br>
+                ٥ × ٧ = ٣٥ <span class="space">..........</span>أي سبعة ٥ مرات أو خمسة ٧ مرات<br>
+                ٥ × ٨ = ٤٠ <span class="space">..........</span>أي ثمانية ٥ مرات أو خمسة ٨ مرات<br>
+                ٥ × ٩ = ٤٥ <span class="space">..........</span>أي تسعة ٥ مرات أو خمسة ٩ مرات<br>
+                ٥ × ١٠ = ٥٠ <span class="space">........</span>أي عشرة ٥ مرات أو خمسة ١٠ مرات<br>
+                <br>
+                <span id="ar_rule">طريقة الحساب بالأصابع للأرقام الأكبر من خمسة:</span> <br><br>
+                و هي طريقة سهلة على الطالب يمكنه أن يستخدمها بسهولة بعد تعلمها ريثما يحفظ كل جداول الضرب.
+                <br><br>
+                <span> المثال الأول: </span> ٨ × ٩ <br>
+                نضع بإحدى اليدين عدد أصابع ناتج طرح: ١٠ - ٩ = ١<br>
+                و في اليد الأخرى ناتج طرح ١٠ - ٨ = ٢<br>
+                وبالتالي سنفتح اصبع واحدة في اليد الأولى و اصبعين في اليد الأخرى. <br>
+                <img class="example" alt="example" src="../images/1p.JPG"><img class="example" alt="example"
+                    src="../images/2pp.jpg"> <br>
+                ثم نضرب ١ × ٢ <br>
+                ١: تمثل عدد الأصابع الممدودة في اليد الأولى <br>
+                ٢: تمثل عدد الأصابع الممدودة في اليد الثانية <br>
+                ٢ × ١ = ٢ <br>
+                ثم نجمع الأصابع غير الممدودة في اليدين معاً ولكن عشرة عشرة، أي كل اصبع يمثل عشرة، وبما أنها ٧ أصابع
+                فالناتج هو: ٧٠.
+                فتكون نتيجة الضرب هي: ٧٠ + ٢ = ٧٢
+                <br> <br>
+                <span> المثال الثاني: </span> ٨ × ٦ <br>
+                ١٠ - ٨ = ٢ <br>
+                ١٠ - ٦ = ٤ <br>
+                في اليد الأولى: اصبعان <br>
+                وفي اليد الثانية ٤ أصابع <br>
+                <img class="example" alt="example" src="../images/2pp.jpg"><img class="example" alt="example"
+                    src="../images/4p.JPG"> <br>
+                ٤ × ٢ = ٨ <br>
+                عدد الأصابع غير الممدودة ٤ كل منها عشرة مجموعها: ٤٠ <br>
+                الناتج النهائي: ٤٠ + ٨ = ٤٨ <br>
+                هناك حالتان ننصح بحفظهما بدلاً من حسابهما بالأصابع لأنه قد يكون حسابهما على الطالب أصعب من حفظهما، و
+                هما: <br>
+                ٦ × ٦ = ٣٦ <br>
+                ٦ × ٧ = ٤٢ <br>
+                <br>
+                <span> المثال الثالث: </span> طريقة الحساب بالأصابع ل ٦ × ٦: <br>
+                ١٠ - ٦ = ٤ <br>
+                ١٠ - ٦ = ٤ <br>
+                ضرب الأصابع الممدودة: ٤ × ٤ = ١٦ <br>
+                عدد الأصابع غير الممدودة: ٢ أي ٢٠ <br>
+                <img class="example" alt="example" src="../images/4p.JPG"><img class="example" alt="example"
+                    src="../images/4p.JPG"> <br>
+                ٢٠ + ١٦ = ٣٦ <br>
+                <br>
+                <span> المثال الرابع: </span> طريقة الحساب بالأصابع ل ٧ × ٦: <br>
+                ١٠ - ٦ = ٤ <br>
+                ١٠ - ٧ = ٣ <br>
+                ضرب الأصابع الممدودة: ٤ × ٣ = ١٢ <br>
+                عدد الأصابع غير الممدودة: ٣ أي ٣٠ <br>
+                <img class="example" alt="example" src="../images/4p.JPG"><img class="example" alt="example"
+                    src="../images/3p.JPG"> <br>
+
+                ٣٠ + ١٢ = ٤٢ <br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم ست:</span> <br>
+                أي رقم يتم ضربه ب ٦ يعني أنه سوف يتكرر ٦ مرات:
+                <br>
+                ٦ × ١ = ١ <span class="space">..........</span> أي ٦ مرة واحدة أو ١ ست مرات <br>
+                ٦ × ٢ = ٢ <span class="space">..........</span> أي ٦ مرتين أو ٢ ست مرات <br>
+                ٦ × ٣ = ٣ <span class="space">..........</span> أي ٦ ثلاث مرات أو ٣ ست مرات <br>
+                ٦ × ٤ = ٤ <span class="space">..........</span> أي ٦ أربع مرات أو ٤ ست مرات <br>
+                ٦ × ٥ = ٥ <span class="space">..........</span> أي ٦ خمس مرات أو ٥ ست مرات <br>
+                ٦ × ٦ = ٦ <span class="space">..........</span> أي ٦ ست مرات<br>
+                ٦ × ٧ = ٧ <span class="space">..........</span> أي ٦ سبع مرات أو ٧ ست مرات <br>
+                ٦ × ٨ = ٨ <span class="space">..........</span> أي ٦ ثمان مرات أو ٨ ست مرات <br>
+                ٦ × ٩ = ٩ <span class="space">..........</span> أي ٦ تسع مرات أو ٩ ست مرات <br>
+                ٦ × ١٠ = ١٠ <span class="space">......</span> أي ٦ عشر مرات أو ١٠ ست مرات<br><br>
+                <span class="ar_number">֎ - جدول رقم سبعة:</span><br>
+                أي رقم يتم ضربه ب ٧ يعني أنه سوف يتكرر ٧ مرات:
+                <br>
+                ٧ × ١ = ٧ <span class="space">............</span> أي واحد ٧ مرات أو سبعة مرة واحدة<br>
+                ٧ × ٢ = ١٤ <span class="space">..........</span> أي اثنان ٧ مرات أو سبعة مرتين<br>
+                ٧ × ٣ = ٢١ <span class="space">..........</span> أي ثلاثة ٧ مرات أو سبعة ٣ مرات<br>
+                ٧ × ٤ = ٢٨ <span class="space">..........</span> أي أربعة ٧ مرات أو سبعة ٤ مرات<br>
+                ٧ × ٥ = ٣٥ <span class="space">..........</span> أي خمسة ٧ مرات أو سبعة ٥ مرات<br>
+                ٧ × ٦ = ٤٢ <span class="space">..........</span> أي ست ٧ مرات أو سبعة ٦ مرات<br>
+                ٧ × ٧ = ٤٩ <span class="space">..........</span> أي سبعة ٧ مرات <br>
+                ٧ × ٨ = ٥٦ <span class="space">..........</span> أي ثمانية ٧ مرات أو سبعة ٨ مرات<br>
+                ٧ × ٩ = ٦٣ <span class="space">..........</span> أي تسعة ٧ مرات أو سبعة ٩ مرات<br>
+                ٧ × ١٠ = ٧٠ <span class="space">........</span> أي عشرة ٧ مرات أو سبعة ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم ثمانية:</span><br>
+                أي رقم يتم ضربه ب ٨ يعني أنه سوف يتكرر ٨ مرات:
+                <br>
+                ٨ × ١ = ٨ <span class="space">............</span> أي واحد ٨ مرات أو ثمانية مرة واحدة<br>
+                ٨ × ٢ = ١٦ <span class="space">..........</span> أي اثنان ٨ مرات أو ثمانية مرتين<br>
+                ٨ × ٣ = ٢٤ <span class="space">..........</span> أي ثلاثة ٨ مرات أو ثمانية ٣ مرات<br>
+                ٨ × ٤ = ٣٢ <span class="space">..........</span> أي أربعة ٨ مرات أو ثمانية ٤ مرات<br>
+                ٨ × ٥ = ٤٠ <span class="space">..........</span> أي خمسة ٨ مرات أو ثمانية ٥ مرات<br>
+                ٨ × ٦ = ٤٨ <span class="space">..........</span> أي ست ٨ مرات أو ثمانية ٦ مرات<br>
+                ٨ × ٧ = ٥٦ <span class="space">..........</span> أي سبعة ٨ مرات أو ثمانية ٧ مرات<br>
+                ٨ × ٨ = ٦٤ <span class="space">..........</span> أي ثمانية ٨ مرات<br>
+                ٨ × ٩ = ٧٢ <span class="space">..........</span> أي تسعة ٨ مرات أو ثمانية ٩ مرات<br>
+                ٨ × ١٠ = ٨٠ <span class="space">........</span> أي عشرة ٨ مرات أو ثمانية ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم تسعة:</span><br>
+                أي رقم يتم ضربه ب ٩ يعني أنه سوف يتكرر ٩ مرات:
+                <br>
+                ٩ × ١ = ٩ <span class="space">............</span> أي واحد ٩ مرات أو تسعة مرة واحدة<br>
+                ٩ × ٢ = ١٨ <span class="space">..........</span> أي اثنان ٩ مرات أو تسعة مرتين<br>
+                ٩ × ٣ = ٢٧ <span class="space">..........</span> أي ثلاثة ٩ مرات أو تسعة ٣ مرات<br>
+                ٩ × ٤ = ٣٦ <span class="space">..........</span> أي أربعة ٩ مرات أو تسعة ٤ مرات<br>
+                ٩ × ٥ = ٤٥ <span class="space">..........</span> أي خمسة ٩ مرات أو تسعة ٥ مرات<br>
+                ٩ × ٦ = ٥٤ <span class="space">..........</span> أي ست ٩ مرات أو تسعة ٦ مرات<br>
+                ٩ × ٧ = ٦٣ <span class="space">..........</span> أي سبعة ٩ مرات أو تسعة ٧ مرات<br>
+                ٩ × ٨ = ٧٢ <span class="space">..........</span> أي ثمانية ٩ مرات أو تسعة ٨ مرات<br>
+                ٩ × ٩ = ٨١ <span class="space">..........</span> أي تسعة ٩ مرات أو تسعة ٩ مرات<br>
+                ٩ × ١٠ = ٩٠ <span class="space">........</span> أي عشرة ٩ مرات أو تسعة ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم عشرة:</span> <br>
+                أي رقم يتم ضربه ب ١٠ يعني أنه سوف يتكرر ١٠ مرات:
+                <br>
+                ١٠ × ١ = ١٠ <span class="space">..........</span> أي واحد ١٠ مرات أو عشرة مرة واحدة<br>
+                ١٠ × ٢ = ٢٠ <span class="space">..........</span> أي اثنان ١٠ مرات أو عشرة مرتين<br>
+                ١٠ × ٣ = ٣٠ <span class="space">..........</span> أي ثلاثة ١٠ مرات أو عشرة ٣ مرات<br>
+                ١٠ × ٤ = ٤٠ <span class="space">..........</span> أي أربعة ١٠ مرات أو عشرة ٤ مرات<br>
+                ١٠ × ٥ = ٥٠ <span class="space">..........</span> أي خمسة ١٠ مرات أو عشرة ٥ مرات<br>
+                ١٠ × ٦ = ٦٠ <span class="space">..........</span> أي ست ١٠ مرات أو عشرة ٦ مرات<br>
+                ١٠ × ٧ = ٧٠ <span class="space">..........</span> أي سبعة ١٠ مرات أو عشرة ٧ مرات<br>
+                ١٠ × ٨ = ٨٠ <span class="space">..........</span> أي ثمانية ١٠ مرات أو عشرة ٨ مرات<br>
+                ١٠ × ٩ = ٩٠ <span class="space">..........</span> أي تسعة ١٠ مرات أو عشرة ٩ مرات<br>
+                ١٠ × ١٠ = ١٠ ٠ <span class="space">......</span> أي عشرة ١٠ مرات أو عشرة ١٠ مرات<br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم أحد عشر:</span> <br>
+                أي رقم يتم ضربه ب ١١ يعني أنه سوف يتكرر ١١ مرات:
+                <br>
+                ١١ × ١ = ١١ <span class="space">..........</span> أي واحد ١١ مرة أو ١١ مرة واحدة<br>
+                ١١ × ٢ = ٢٢ <span class="space">..........</span> أي اثنان ١١ مرة أو أحد عشر مرتين<br>
+                ١١ × ٣ = ٣٣ <span class="space">..........</span> أي ثلاثة ١١ مرة أو أحد عشر ٣ مرات<br>
+                ١١ × ٤ = ٤٤ <span class="space">..........</span> أي أربعة ١١ مرة أو أحد عشر ٤ مرات<br>
+                ١١ × ٥ = ٥٥ <span class="space">..........</span> أي خمسة ١١ مرة أو أحد عشر ٥ مرات<br>
+                ١١ × ٦ = ٦٦ <span class="space">..........</span> أي ست ١١ مرة أو أحد عشر ٦ مرات<br>
+                ١١ × ٧ = ٧٧ <span class="space">..........</span> أي سبعة ١١ مرة أو أحد عشر ٧ مرات<br>
+                ١١ × ٨ = ٨٨ <span class="space">..........</span> أي ثمانية ١١ مرة أو أحد عشر ٨ مرات<br>
+                ١١ × ٩ = ٩٩ <span class="space">..........</span> أي تسعة ١١ مرة أو أحد عشر ٩ مرات<br>
+                ١١ × ١٠ = ١١٠ <span class="space">......</span> أي عشرة ١١ مرة أو أحد عشر ١٠ مرات<br>
+                ١١ × ١١ = ١٢١ <span class="space">......</span> أي أحد عشر ١١ مرة <br>
+                <br>
+                <span class="ar_number">֎ - جدول رقم اثنا عشر:</span> <br>
+                أي رقم يتم ضربه ب ١٢ يعني أنه سوف يتكرر ١٢ مرات:
+                <br>
+                ١٢ × ١ = ١٢ <span class="space">..........</span> أي واحد ١٢ مرة أو ١٢ مرة واحدة<br>
+                ١٢ × ٢ = ٢٤ <span class="space">..........</span> أي اثنان ١٢ مرة أو اثنا عشر مرتين<br>
+                ١٢ × ٣ = ٣٦ <span class="space">..........</span> أي ثلاثة ١٢ مرة أو اثنا عشر ٣ مرات<br>
+                ١٢ × ٤ = ٤٨ <span class="space">..........</span> أي أربعة ١٢ مرة أو اثنا عشر ٤ مرات<br>
+                ١٢ × ٥ = ٦٠ <span class="space">..........</span> أي خمسة ١٢ مرة أو اثنا عشر ٥ مرات<br>
+                ١٢ × ٦ = ٧٢ <span class="space">..........</span> أي ست ١٢ مرة أو اثنا عشر ٦ مرات<br>
+                ١٢ × ٧ = ٨٤ <span class="space">..........</span> أي سبعة ١٢ مرة أو اثنا عشر ٧ مرات<br>
+                ١٢ × ٨ = ٩٦ <span class="space">..........</span> أي ثمانية ١٢ مرة أو اثنا عشر ٨ مرات<br>
+                ١٢ × ٩ = ١٠ ٨ <span class="space">........</span> أي تسعة ١٢ مرة أو اثنا عشر ٩ مرات<br>
+                ١٢ × ١٠ = ١٢٠ <span class="space">......</span> أي عشرة ١٢ مرة أو اثنا عشر ١٠ مرات<br>
+                ١٢ × ١١ = ١٣٢ <span class="space">......</span> أي أحد عشر ١٢ مرة أو اثنا عشر ١١ مرات<br>
+                ١٢ × ١٢ = ١٤٤ <span class="space">......</span> أي اثنا عشر ١٢ مرة <br>
+            <p id="ar_division_p" class="title_p">شرح عملية القسمة </p>
+            <p id="ar_division_p1" class="">
+                <span class="margin"> لعملية القسمة ثلاث طرق: التوزيع، و كم، و عكس الضرب. </span><br>
+                نستخدم إحدى الطريقتين الأولى أو الثانية أيهما أسهل، و ذلك في بداية تعلم عملية القسمة لنسهل على الطالب
+                فهم
+                عملية القسمة جيداً. <br>
+                <span class="pp">① التوزيع: </span><br>
+                <span class="note">مثال: </span>
+                ٨ ÷ ٢ = ؟ <br>
+                أي ثمانية أشياء ولتكن أقلاماً مثلاً، نريد توزيعها على شخصين اثنين مثلاً بالتساوي، كم عدد الأقلام التي
+                نعطيها لكل
+                واحد منهما ؟ <br>
+                الجواب ٤، لأن ٤ + ٤ = ٨. <br>
+                <span class="pp">② الكم: </span><br>
+                <span class="note">مثال: </span>
+                ٦ ÷ ٣ = ؟ <br>
+                كم ثلاثة موجودة في الرقم ستة ؟ <br>
+                الجواب: ٢. <br><br>
+                <span class="note">ملاحظة: </span> قد تكون إحدى الطريقتين أسهل من الأخرى حسب المثال: <br>
+                فمثلاً: ٢٠ ÷ ٢ <br>
+                طريقة التوزيع هنا أسهل: ٢٠ تفاحة نوزعها على شخصين بالتساوي فكم تفاحة يأخذ كل منهما ؟ الجواب ١٠ <br>
+                بينما: ٢٠ ÷ ١٠ <br>
+                طريقة الكم هنا أسهل: كم عشرة موجودة في الرقم عشرين ؟
+                الجواب: ٢ <br>
+                <span class="pp">③ عكس الضرب:</span><br>
+                هنا يجب على الطالب أن يكون قد حفظ جداول الضرب للأرقام في المسائل. <br>
+                و هذه هي الطريقة التي سيعتمد عليها الطالب بعد فهم معنى القسمة بالطريقتين السابقتين، لأنه لا يمكن
+                استخدامهما إلا للحالات السهلة. <br>
+                <span class="note">مثال: </span> ٣٠ ÷ ٦ = ؟ <br>
+                ما هو العدد الذي إذا ضربناه بالمقسوم عليه (أي ٦ ) كان الناتج هو الرقم الذي نقسمه (أي ٣٠ ) ؟ <br>
+                هنا يجب على الطالب أن يتذكر من جداول الضرب:<br>
+                ٥ × ٦ = ٣٠ <br>
+                قد يرى الطالب في البداية صعوبة في تذكر ذلك لأنها عملية بحث تجري في فكره الآن عن رقمين ناتج ضربهما ٣٠ و
+                أحدهما هو ٦. <br>
+                و في حال لم يتذكر مباشرة يمكنه أن يراجع في ذهنه جدول رقم ٦ في مثالنا هذا: <br>
+                فيقول: <br>
+                ٦ × ١ = ٦ <span class="space">.........</span>ليس هو الناتج الذي نبحث عنه<br>
+                ٦ × ٢ = ١٢ <span class="space">.......</span>ليس هو الناتج الذي نبحث عنه<br>
+                ٦ × ٣ = ١٨ <span class="space">.......</span>ليس هو الناتج الذي نبحث عنه<br>
+                ٦ × ٤ = ٢٤ <span class="space">.......</span>ليس هو الناتج الذي نبحث عنه<br>
+                ٦ × ٥ = ٣٠ <span class="space">.......</span>و هو الناتج الذي نبحث عنه، فالجواب هو ٥، أي أن: <br>
+                ٣٠ ÷ ٦ = ٥ <br><br>
+                <span class="note">ملاحظة ١: </span> عملية القسمة ليست تبديلية.<br>
+                أي أن: ٩ ÷ ٣ لا يساوي ٣ ÷ ٩. <br><br>
+                <span class="note">ملاحظة ٢: </span> <br>
+                كل عملية ضرب لرقمين ينتج عنها عمليتي قسمة <br>
+                وهما: ناتج عملية الضرب إذا قسمناه على أحد الرقمين كان الناتج هو الرقم الآخر
+                ، فمثلاً: <br>
+                ٦ × ٥ = ٣٠ <br>
+                ينتج عنها:<br>
+                ٣٠ ÷ ٦ = ٥<br>
+                ٣٠ ÷ ٥ = ٦<br>
+                <br>
+            </p>
+            <p id="ar_general_tests_p" class="title_p">شرح الإختبارات العامة </p>
+            <p id="ar_general_tests_p1" class="">
+                اخترت نوع واحد من المسائل الصعبة على الطلاب في هذه المرحلة، وهي: <br>
+                رقمان مجموعهما معلوم و ناتج ضربهما معلوم، فما هما ؟ <br>
+                وحتى يعتاد الطالب على هذا النوع من المسائل فإنه يمكن للطالب أن يعرف أحد الرقمين وهو الجدول الذي اختاره.
+                <br>
+                فإذا اختار أكثر من جدول فإن أحد الرقمين هو أحد الجداول التي اختارها. <br><br>
+                <span class="note">مثال: </span><br>
+                رقمان ناتج ضربهما: ٢٤، و مجموعهما: ١٠، فما هما ؟ <br>
+                يبحث الطالب في ذهنه في جداول الضرب فيتذكر أن: <br>
+                ٨ × ٣ = ٢٤ <br>
+                ٦ × ٤ = ٢٤ <br>
+                مجموع الرقمين في الحالة الأولى ١١ مخالف للمطلوب فليس هما الجواب. <br>
+                و مجموع الرقمين في الحالة الثانية ١٠ وهو المطلوب. <br>
+                إذاً فالرقمان هما: ٦، ٤. <br><br>
+                <span class="note">ملاحظة: </span><br>
+                هذا النوع من المسائل حله في هذه المرحلة الابتدائية هو التذكر و التجريب، أي أنه يجرب في كل مرة رقمين و
+                يرى ناتج ضربهما، ثم إذا كان هو المطلوب يجرب ما هو ناتج مجموعهما، فإن لم ينطبق مع المطلوب بحث عن غيرهما.
+
+            </p>
+            <p id="ar_end_p" class="title_p"> الخاتمة </p>
+            <p id="ar_end_p1" class="">
+                نرجو أن ينال الموقع رضاكم و يستفيد الطلاب في التمرن على جداول الضرب و القسمة و فهمها و حفظها بشكل أفضل
+                و أسرع. <br>
+                يسرنا تواصلكم و إبداء آرائكم و ملاحظاتكم. <br>
+                تم تصميم الموقع بجهود فردية تماماً لذلك فأي تطويرات أو توسيع للموقع سيحتاج إلى الوقت و الدعم.
+                <br><br>
+                <span class="note">للتواصل: </span><br>
+            <p class="cont2">
+                إيميل: engineer.shadirahhal@gmail.com <br><br>
+                للتبرع:<br>
+                IBAN: AE620500000000014580480
+                Account No.: 14580480<br><br>
+                مطور و مصمم الموقع: شادي رحال
+                <br>
+            </p>
+            <pre>
+
+
+            </pre>
+        </div>
+        <p class="paragraph1">
+            - يختار الطالب الجدول الذي يريد حفظه، ثم يضغط <span class="press">(ابدأ الاختبار)</span> أو من لوحة المفاتيح
+            يضغط
+            <span class="press">(enter)</span>.
+            <br>
+            - أدخل الجواب في الخانة، إما بإدخال مباشر للرقم أو بالضغط على زر الفأر الأيسر، أو يمكن زيادة و إنقاص الرقم
+            بواسطة لوحة المفاتيح السهم العلوي
+            و
+            السهم السفلي.
+            <br>
+            - بعد إدخال الجواب، يمكنك التأكد من صحة جوابك بالضغط على زر <span class="press">(تحقق من الجواب)</span>
+            أو اضغط <span class="press">(space)</span>.
+            <br>
+            ثم اضغط زر<span class="press">
+                (ابدأ الاختبار)</span> أو <span class="press">
+                (enter)</span>.
+            <br>
+            - في كل مرة يتغير فيها السؤال عليك أن تضغط زر <span class="press">
+                (ابدأ الاختبار)</span> أو <span class="press">
+                (enter)</span>.
+            <br>
+            - بعد انتهاء الاختبار اضغط زر <span class="press">
+                (أعد اختبار الأخطاء)</span> أو اضغط <span class="press">
+                (ctrl)</span>،
+            ثم اضغط زر <span class="press">
+                (ابدأ اختبار الأخطاء) </span>أو <span class="press">
+                (enter)</span> في كل مرة يتغير فيها السؤال.
+            <br>
+            يجب على الطالب أن يستمر بإعادة اختبار الأخطاء حتى لا يبقى أي خطأ حينها يكون قد حفظ الجدول.
+            <br>
+            - يمكنك تغيير لون خلفية الصفحة بالضغط على الزر الدائري .
+            <br>
+            كما يمكنك تغيير لون الخلفية لأي لون ترغب به بالنقر المزدوج على زر العنوان، ثم تختار اللون ثم نقر مزدوج مرة
+            اخرى لإخفاء الصندوق.
+            <br>
+            - لاختيار الجدول بالماوس اضغط:<span class="press">
+                + الرقم.</span>
+            <br>
+            - لإلغاء اختيار الجدول بالماوس اضغط:<span class="press">
+                - الرقم.</span>
+            <br>
+            - لاختيار الأرقام العربية بالماوس اضغط: <span class="press">
+                shift a</span>.
+            <br>
+            - لاختيار الأرقام الانكليزية بالماوس اضغط: <span class="press">
+                shift e</span>.
+            <br>
+            - لتفعيل أو تعطيل الصوت لذوي الاحتياجات الخاصة بالماوس اضغط: <span class="press">
+                shift s</span>.<br>
+            - لإنهاء الاختبار و تنظيف الشاشة اضغط زر العنوان، أو اضغط مفتاح:
+            <span class="press">(esc)</span>
+            في لوحة المفاتيح.
+
+        </p>
+        <div>
+            <!-- ________________ audio files ___________________________ -->
+            <audio class="audio" src="../voice/+all.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+1.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+2.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+3.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+4.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+5.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+6.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+7.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+8.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+9.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/+10.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-1.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-2.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-3.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-4.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-5.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-6.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-7.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-8.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-9.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-10.mp3" controls>one</audio>
+            <audio class="audio" src="../voice/-all.mp3" controls>one</audio>
+            <audio class="audio" id="answer_voice" src="../voice/right-answer-e.m4a">-</audio>
+            <audio class="audio" id="exam_errors_voice" src="../voice/exam-errors.mp3">-</audio>
+            <audio class="audio" id="next_voice" src="../voice/next.mp3">-</audio>
+            <audio class="audio" id="space_voice" src="../voice/check.mp3">-</audio>
+            <audio class="audio" id="start_exam_voice" src="../voice/new_voice.mp3">-</audio>
+            <audio class="audio" id="start_exam_errors_voice" src="../voice/start_exam_errors.mp3">-</audio>
+            <audio class=" audio" id="start_new_exam_voice" src="../voice/new_voice.mp3">-</audio>
+            <audio class="audio" id="a0" src="../voice/zero_a.m4a"></audio>
+            <audio class="audio" id="a1" src="../voice/1.mp3"></audio>
+            <audio class="audio" id="a2" src="../voice/2.mp3"></audio>
+            <audio class="audio" id="a3" src="../voice/3.mp3"></audio>
+            <audio class="audio" id="a4" src="../voice/4.mp3"></audio>
+            <audio class="audio" id="a5" src="../voice/5.mp3"></audio>
+            <audio class="audio" id="a6" src="../voice/6.mp3"></audio>
+            <audio class="audio" id="a7" src="../voice/7.mp3"></audio>
+            <audio class="audio" id="a8" src="../voice/8.mp3"></audio>
+            <audio class="audio" id="a9" src="../voice/9.mp3"></audio>
+            <audio class="audio" id="a10" src="../voice/10.mp3"></audio>
+            <audio class="audio" id="a11" src="../voice/11.mp3"></audio>
+            <audio class="audio" id="a12" src="../voice/12.mp3"></audio>
+            <audio class="audio" id="a13" src="../voice/13.mp3"></audio>
+            <audio class="audio" id="a14" src="../voice/14.mp3"></audio>
+            <audio class="audio" id="a15" src="../voice/15.mp3"></audio>
+            <audio class="audio" id="a16" src="../voice/16.mp3"></audio>
+            <audio class="audio" id="a17" src="../voice/17.mp3"></audio>
+            <audio class="audio" id="a18" src="../voice/18.mp3"></audio>
+            <audio class="audio" id="a19" src="../voice/19.mp3"></audio>
+            <audio class="audio" id="a20" src="../voice/20.mp3"></audio>
+            <audio class="audio" id="a21" src="../voice/21.mp3"></audio>
+            <audio class="audio" id="a22" src="../voice/22.mp3"></audio>
+            <audio class="audio" id="a23" src="../voice/23.mp3"></audio>
+            <audio class="audio" id="a24" src="../voice/24.mp3"></audio>
+            <audio class="audio" id="a25" src="../voice/25.mp3"></audio>
+            <audio class="audio" id="a26" src="../voice/26.mp3"></audio>
+            <audio class="audio" id="a27" src="../voice/27.mp3"></audio>
+            <audio class="audio" id="a28" src="../voice/28.mp3"></audio>
+            <audio class="audio" id="a29" src="../voice/29.mp3"></audio>
+            <audio class="audio" id="a30" src="../voice/30.mp3"></audio>
+            <audio class="audio" id="a31" src="../voice/31.mp3"></audio>
+            <audio class="audio" id="a32" src="../voice/32.mp3"></audio>
+            <audio class="audio" id="a33" src="../voice/33.mp3"></audio>
+            <audio class="audio" id="a34" src="../voice/34.mp3"></audio>
+            <audio class="audio" id="a35" src="../voice/35.mp3"></audio>
+            <audio class="audio" id="a36" src="../voice/36.mp3"></audio>
+            <audio class="audio" id="a37" src="../voice/37.mp3"></audio>
+            <audio class="audio" id="a38" src="../voice/38.mp3"></audio>
+            <audio class="audio" id="a39" src="../voice/39.mp3"></audio>
+            <audio class="audio" id="a40" src="../voice/40.mp3"></audio>
+            <audio class="audio" id="a41" src="../voice/41.mp3"></audio>
+            <audio class="audio" id="a42" src="../voice/42.mp3"></audio>
+            <audio class="audio" id="a43" src="../voice/43.mp3"></audio>
+            <audio class="audio" id="a44" src="../voice/44.mp3"></audio>
+            <audio class="audio" id="a45" src="../voice/45.mp3"></audio>
+            <audio class="audio" id="a46" src="../voice/46.mp3"></audio>
+            <audio class="audio" id="a47" src="../voice/47.mp3"></audio>
+            <audio class="audio" id="a48" src="../voice/48.mp3"></audio>
+            <audio class="audio" id="a49" src="../voice/49.mp3"></audio>
+            <audio class="audio" id="a50" src="../voice/50.mp3"></audio>
+            <audio class="audio" id="a51" src="../voice/51.mp3"></audio>
+            <audio class="audio" id="a52" src="../voice/52.mp3"></audio>
+            <audio class="audio" id="a53" src="../voice/53.mp3"></audio>
+            <audio class="audio" id="a54" src="../voice/54.mp3"></audio>
+            <audio class="audio" id="a55" src="../voice/55.mp3"></audio>
+            <audio class="audio" id="a56" src="../voice/56.mp3"></audio>
+            <audio class="audio" id="a57" src="../voice/57.mp3"></audio>
+            <audio class="audio" id="a58" src="../voice/58.mp3"></audio>
+            <audio class="audio" id="a59" src="../voice/59.mp3"></audio>
+            <audio class="audio" id="a60" src="../voice/60.mp3"></audio>
+            <audio class="audio" id="a61" src="../voice/61.mp3"></audio>
+            <audio class="audio" id="a62" src="../voice/62.mp3"></audio>
+            <audio class="audio" id="a63" src="../voice/63.mp3"></audio>
+            <audio class="audio" id="a64" src="../voice/64.mp3"></audio>
+            <audio class="audio" id="a65" src="../voice/65.mp3"></audio>
+            <audio class="audio" id="a66" src="../voice/66.mp3"></audio>
+            <audio class="audio" id="a67" src="../voice/67.mp3"></audio>
+            <audio class="audio" id="a68" src="../voice/68.mp3"></audio>
+            <audio class="audio" id="a69" src="../voice/69.mp3"></audio>
+            <audio class="audio" id="a70" src="../voice/70.mp3"></audio>
+            <audio class="audio" id="a71" src="../voice/71.mp3"></audio>
+            <audio class="audio" id="a72" src="../voice/72.mp3"></audio>
+            <audio class="audio" id="a73" src="../voice/73.mp3"></audio>
+            <audio class="audio" id="a74" src="../voice/74.mp3"></audio>
+            <audio class="audio" id="a75" src="../voice/75.mp3"></audio>
+            <audio class="audio" id="a76" src="../voice/76.mp3"></audio>
+            <audio class="audio" id="a77" src="../voice/77.mp3"></audio>
+            <audio class="audio" id="a78" src="../voice/78.mp3"></audio>
+            <audio class="audio" id="a79" src="../voice/79.mp3"></audio>
+            <audio class="audio" id="a80" src="../voice/80.mp3"></audio>
+            <audio class="audio" id="a81" src="../voice/81.mp3"></audio>
+            <audio class="audio" id="a82" src="../voice/82.mp3"></audio>
+            <audio class="audio" id="a83" src="../voice/83.mp3"></audio>
+            <audio class="audio" id="a84" src="../voice/84.mp3"></audio>
+            <audio class="audio" id="a85" src="../voice/85.mp3"></audio>
+            <audio class="audio" id="a86" src="../voice/86.mp3"></audio>
+            <audio class="audio" id="a87" src="../voice/87.mp3"></audio>
+            <audio class="audio" id="a88" src="../voice/88.mp3"></audio>
+            <audio class="audio" id="a89" src="../voice/89.mp3"></audio>
+            <audio class="audio" id="a90" src="../voice/90.mp3"></audio>
+            <audio class="audio" id="a91" src="../voice/91.mp3"></audio>
+            <audio class="audio" id="a92" src="../voice/92.mp3"></audio>
+            <audio class="audio" id="a93" src="../voice/93.mp3"></audio>
+            <audio class="audio" id="a94" src="../voice/94.mp3"></audio>
+            <audio class="audio" id="a95" src="../voice/95.mp3"></audio>
+            <audio class="audio" id="a96" src="../voice/96.mp3"></audio>
+            <audio class="audio" id="a97" src="../voice/97.mp3"></audio>
+            <audio class="audio" id="a98" src="../voice/98.mp3"></audio>
+            <audio class="audio" id="a99" src="../voice/99.mp3"></audio>
+            <audio class="audio" id="a100" src="../voice/100.mp3"></audio>
+            <audio class="audio" id="awrong" src="../voice/wrong_2.mp3"></audio>
+            <audio class="audio" id="right" src="../voice/right.mp3"></audio>
+            <audio class="audio" id="correct" src="../voice/correct.mp3"></audio>
+            <!--  ______________________ correct & wrong Tunes ____________________ -->
+            <audio class="audio" id="correct_tune1" src="../voice/correct1.mp3"></audio>
+            <audio class="audio" id="correct_tune2" src="../voice/correct2.mp3"></audio>
+            <audio class="audio" id="correct_tune3" src="../voice/correct3.mp3"></audio>
+            <audio class="audio" id="correct_tune4" src="../voice/correct4.mp3"></audio>
+            <audio class="audio" id="correct_tune5" src="../voice/correct5.mp3"></audio>
+            <audio class="audio" id="correct_tune6" src="../voice/correct6.mp3"></audio>
+            <audio class="audio" id="wrong_tune1" src="../voice/wronganswer1.mp3"></audio>
+            <audio class="audio" id="wrong_tune2" src="../voice/wronganswer2.mp3"></audio>
+            <audio class="audio" id="wrong_tune3" src="../voice/wronganswer3.mp3"></audio>
+            <audio class="audio" id="wrong_tune4" src="../voice/wronganswer4.mp3"></audio>
+            <audio class="audio" id="wrong_tune5" src="../voice/wronganswer5.mp3"></audio>
+            <audio class="audio" id="wrong_tune6" src="../voice/wronganswer6.mp3"></audio>
+            <audio class="audio" id="wenner" src="../voice/wenner1.mp3"></audio>
+            <audio class="audio" id="yourmark_a" src="../voice/mark_a.m4a"></audio>
+            <audio class="audio" id="level_a" src="../voice/level_a.m4a"></audio>
+            <audio class="audio" id="weak_a" src="../voice/weak_a.m4a"></audio>
+            <audio class="audio" id="middle_a" src="../voice/middle_a.m4a"></audio>
+            <audio class="audio" id="good_a" src="../voice/good_a.m4a"></audio>
+            <audio class="audio" id="vgood_a" src="../voice/vgood_a.m4a"></audio>
+            <audio class="audio" id="excellent_a" src="../voice/excellent_a.m4a"></audio>
+            <audio class="audio" id="vexcellent_a" src="../voice/Vexcellent_a.m4a"></audio>
+            <audio class="audio" id="vexcellent" src="../voice/Vexcellent.m4a"></audio>
+            <audio class="audio" id="errors_a" src="../voice/errors_a.m4a"></audio>
+
+            <audio class="audio songs" id="song1" src="../voice/newmusic.mp3" controls></audio>
+            <audio class="audio songs" id="song2" src="../voice/Kronicle.mp3" controls></audio>
+            <audio class="audio songs" id="song3" src="../voice/Wavecont.mp3" controls></audio>
+
+        </div>
+        <script src="../js/jQuery-1.12.4.min.js"></script>
+        <script src="../js/multiple_arabic.js"></script>
+    </body>
+
+</html>
