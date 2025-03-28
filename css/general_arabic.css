@@ -2458,7 +2458,7 @@ input::selection {
         color: rgb(220, 220, 80);
         border: 1px solid yellow;
         transform: translateX(0);
-        transform: translateY(-50px);
+        transform: translateY(-27px);
     }
 
     #img1 {
